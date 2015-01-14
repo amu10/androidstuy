@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="8dip"
+    android:paddingRight="8dip" >
+
+    <TextView
+        android:id="@+id/tvTop"
+        style="@style/text_white12"
+        android:layout_width="22dip"
+        android:layout_height="22dip"
+        android:layout_centerVertical="true"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvMovieName"
+        style="@style/text_white16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dip"
+        android:layout_toRightOf="@+id/tvTop" />
+
+    <TextView
+        android:id="@+id/tvInCome"
+        style="@style/crimson16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="24dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="24dip" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/zsq_xy_line" />
+
+</RelativeLayout>

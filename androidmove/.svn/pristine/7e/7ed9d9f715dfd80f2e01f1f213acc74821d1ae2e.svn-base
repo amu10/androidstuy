@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <TextView
+        android:id="@+id/tvCinemaName"
+        style="@style/blue18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="6dip"
+        android:layout_marginTop="16dip"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="星美影城" />
+
+    <ImageView
+        android:layout_width="8dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvCinemaName"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/whitejiantou" />
+
+    <ImageView
+        android:id="@+id/ivLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCinemaName"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/zsq_xy_line" />
+
+    <ListView
+        android:id="@+id/listSubCoupon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLine"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dip"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent" />
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="5dip"
+    android:orientation="vertical"
+    android:paddingBottom="7dip"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:paddingTop="15dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="手机号码:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#797776"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textview_orderpay_success_recyphone"
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!-- phone -->
+
+
+    <!-- 二行S -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="短信凭证将发送至此手机号,请注意查收!"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#D96B21"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!-- sms -->
+
+
+    <!-- 三行S -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="电影名称:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#797776"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textview_orderpay_success_movieName"
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:text="金陵十三钗(数国)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!-- movieName -->
+
+
+    <!-- 四行S -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="放映时间:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#797776"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textview_orderpay_success_showtime"
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:text="2012-11-20"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!-- movie_showtime -->
+
+
+    <!-- 四行S -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="放映厅:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#797776"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textview_orderpay_success_movieCinemaName"
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:text="百老汇影院 8号厅"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!-- movie_cinema_name -->
+
+</LinearLayout>

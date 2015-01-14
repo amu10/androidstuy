@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<!-- 地图 S -->
+	<RelativeLayout android:layout_width="fill_parent"
+		android:id="@+id/map_layout" android:layout_height="fill_parent">
+		<com.mapabc.mapapi.map.MapView
+			android:id="@+id/mapview" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:clickable="true"
+			android:apiKey="@string/maps_api_key" />
+	</RelativeLayout>
+	<!-- 地图 E -->
+
+	<!-- 信号栏s -->
+	 <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/title_bg" />
+
+        <com.szcmcc.movie.view.BackImageLinear
+            android:layout_width="39dip"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.BackImageView
+                android:id="@+id/back"
+                android:layout_width="39dip"
+                android:layout_height="28dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/back_btn_selector"
+                android:scaleType="center" />
+        </com.szcmcc.movie.view.BackImageLinear>
+
+        <!-- <TextView -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1.0" -->
+        <!-- android:text="" /> -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.HomeImageLayout
+                android:id="@+id/homeLayout"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|right"
+                android:paddingBottom="5dip"
+                android:scaleType="center" >
+
+                <com.szcmcc.movie.view.HomeImageView
+                    android:id="@+id/home"
+                    android:layout_width="30dip"
+                    android:layout_height="24dip"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginTop="1dip"
+                    android:background="@drawable/home_btn_selector"
+                    android:scaleType="center" />
+            </com.szcmcc.movie.view.HomeImageLayout>
+
+            <com.szcmcc.movie.view.TimeTextView
+                android:id="@+id/currentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="23dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="7dip"
+                android:gravity="center"
+                android:text="12:34"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.szcmcc.movie.view.NetImageView
+                android:id="@+id/net"
+                android:layout_width="30dip"
+                android:layout_height="24dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="1dip"
+                android:layout_marginRight="5dip"
+                android:scaleType="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+	<!-- 信号栏E -->
+</RelativeLayout>

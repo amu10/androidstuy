@@ -1,0 +1,31 @@
+解压 android.rar
+安装 jdk
+安装 ant
+设置环境变量：
+ANT_HOME=<ant安装目录>
+JAVA_HOME=<jdk安装目录>
+ANDROID_HOME=<android.rar解压目录>
+CLASSPATH=.;%JAVA_HOME%libtools.jar;%JAVA_HOME%libdt.jar;%JAVA_HOME%bin;
+在Path后追加：%ANDROID_HOME%\tools;%JAVA_HOME%\bin;%ANT_HOME%\bin;
+执行mkpkg.bat进行打包
+打包签名文件在 bin 目录下
+
+
+注意：正式发送签名文件是在 ../key_store 目录下，需要checkout出来，否则找不到koubei.keystore
+
+mkpkg.bat 默认打口碑的包
+mkpkg.bat 根据不同渠道推广，打多个包，需要完成一下工作：
+1. 修改build.xml 第二行的  <project name="myprject" default="jarsigner" basedir=".">  为  <project name="myprject" default="ids" basedir=".">
+2. 在ids.cfg 添加渠道 标识（一个标识一行），例如：
+sinaurl_wap
+sina_wap
+3.执行mkpkg.bat
+
+批量打包需要到地址：
+http://ant-contrib.sourceforge.net/
+下载一个 ant-contrib-1.0b3.jar 的开源批量ant打包工具
+把他放到 ant 的lib目录下。
+
+回车换行的转义字符在ant中表示为：&#xD;&#xA
+
+ 命名规则：appname_android_v1.0_20120101_channel001.apk

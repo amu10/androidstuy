@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#60000000" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/ivStills"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop" />
+
+        <com.szcmcc.movie.view.LoadingImagView
+            android:id="@+id/ivLoadIv"
+            android:layout_width="170dip"
+            android:layout_height="190dip"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dip"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rvGray"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zsq_gallery_gray" />
+
+        <ImageView
+            android:id="@+id/ivMovieInfo"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ivBuy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/zsq_bule_movie_info" />
+
+        <ImageView
+            android:id="@+id/ivBuy"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/zsq_orange_buy" />
+    </RelativeLayout>
+
+</RelativeLayout>

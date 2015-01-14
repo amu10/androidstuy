@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zsq_main_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rvTop"
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/title_bg" >
+
+        <ImageButton
+            android:id="@+id/imBack"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_btn_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/oneline"
+        android:layout_width="fill_parent"
+        android:layout_height="22dip"
+        android:layout_below="@+id/rvTop"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/myTicketTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="26dip"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="我的票务"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#b2b2b2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="center"
+                    android:src="@drawable/xiao_icon_ren" />
+
+                <TextView
+                    android:id="@+id/phone_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dip"
+                    android:layout_marginTop="3dip"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#2587B7"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/oneline"
+        android:layout_marginBottom="60dip" >
+
+        <LinearLayout
+            android:id="@+id/menuonepage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/mimakuang"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/seats_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#FFFFFF"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:footerDividersEnabled="false"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menutwopage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/mimakuang"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/ticketchange_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#FFFFFF"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:footerDividersEnabled="false"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuDiKoupage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/mimakuang"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/myDiKou_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#FFFFFF"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:footerDividersEnabled="false"
+                    android:listSelector="#00000000"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuthreepage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/mimakuang"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/myZengquan_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#FFFFFF"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:footerDividersEnabled="false"
+                    android:listSelector="#00000000"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menufourpage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/mimakuang" >
+
+                <ListView
+                    android:id="@+id/moviesave_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#FFFFFF"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:footerDividersEnabled="false"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menushuomingpage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/mimakuang"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:fadingEdge="none" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="8dip" >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dip"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/zsq_blue_a" />
+
+                                <TextView
+                                    style="@style/dark_gray14"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dip"
+                                    android:text="@string/piaowushuoming_a" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dip"
+                                android:orientation="horizontal"
+                                android:padding="8dip" >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dip"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/zsq_blue_b" />
+
+                                <TextView
+                                    style="@style/dark_gray14"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dip"
+                                    android:text="@string/piaowushuoming_b" />
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/dark_gray14"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dip"
+                                android:paddingLeft="8dip"
+                                android:paddingRight="8dip"
+                                android:paddingTop="5dip"
+                                android:text="@string/piaowushuoming_ab"
+                                android:textColor="#2587B7" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dip"
+                                android:orientation="horizontal"
+                                android:padding="8dip" >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dip"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/zsq_blue_c" />
+
+                                <TextView
+                                    style="@style/dark_gray14"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dip"
+                                    android:text="@string/piaowushuoming_c" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dip"
+                                android:orientation="horizontal"
+                                android:padding="8dip" >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dip"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/zsq_blue_d" />
+
+                                <TextView
+                                    style="@style/dark_gray14"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dip"
+                                    android:text="@string/piaowushuoming_d" />
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/dark_gray14"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dip"
+                                android:layout_marginLeft="20dip"
+                                android:paddingLeft="8dip"
+                                android:paddingRight="8dip"
+                                android:paddingTop="5dip"
+                                android:text="@string/piaowushuoming_cd"
+                                android:textColor="#2587B7" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 底部菜单 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="54dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/menuone"
+            android:layout_width="54dip"
+            android:layout_height="54dip"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_zuoweipiao_selector"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/menutwo"
+            android:layout_width="54dip"
+            android:layout_height="54dip"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_duihuanquan_selector"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/menuCoupon"
+            android:layout_width="54dip"
+            android:layout_height="54dip"
+            android:layout_gravity="center"
+            android:background="@drawable/zsq_icon_zhekouquan_selector"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/menuthree"
+            android:layout_width="54dip"
+            android:layout_height="54dip"
+            android:layout_gravity="center"
+            android:background="@drawable/icon_myzengquan_selector"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/menuTicketDescription"
+            android:layout_width="54dip"
+            android:layout_height="54dip"
+            android:layout_gravity="center"
+            android:background="@drawable/zsq_icon_piaowu_selector"
+            android:scaleType="fitCenter" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noSaveMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="47dip"
+            android:layout_marginBottom="5dip"
+            android:background="@drawable/wait2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="您还没有收藏过电影，快去看看有没有自己喜欢的吧！"
+            android:textColor="#888888"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noBuyMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="47dip"
+            android:layout_marginBottom="5dip"
+            android:background="@drawable/wait2" />
+
+        <TextView
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="您还没有购买过电影，快去看看有没有自己喜欢的吧！"
+            android:textColor="#888888"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_progress"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

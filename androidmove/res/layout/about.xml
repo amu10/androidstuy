@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zsq_main_bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/title_bg" >
+
+        <ImageButton
+            android:id="@+id/imBack"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_btn_selector" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="25dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25dip"
+                android:layout_marginTop="6dip"
+                android:gravity="center"
+                android:text="关于"
+                android:textSize="18sp" >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="56dip"
+                    android:layout_height="56dip"
+                    android:layout_marginRight="30dip"
+                    android:background="@drawable/icon_img" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dip"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="深圳爱电影"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/about_verson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:text="v1.0.1"
+                        android:textColor="#ffffff" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="随时随地查看最新电影资讯，发表影评，参与互动，更可以深圳移动特惠的价格在线电影选座购票，并享受影院现场一站式取票服务，为您打造更便捷、时尚的影视娱乐生活！"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:background="@drawable/about_biankuang"
+                android:orientation="vertical"
+                android:padding="1dip" >
+
+                <LinearLayout
+                    android:id="@+id/versonInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="24dip"
+                        android:layout_height="27dip"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/icon_version" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="版本信息"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/rightjian" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/line2" />
+
+                <LinearLayout
+                    android:id="@+id/tip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="24dip"
+                        android:layout_height="27dip"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/icon_tips" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="温馨提示"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/rightjian" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/line2" />
+
+                <LinearLayout
+                    android:id="@+id/serviceMessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="24dip"
+                        android:layout_height="27dip"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/icon_item" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="服务条款"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/rightjian" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:gravity="center"
+        android:text="Copyright(C)2011 深圳移动 版权所有"
+        android:textSize="11sp" >
+    </TextView>
+
+</RelativeLayout>

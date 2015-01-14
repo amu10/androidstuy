@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/black" >
+
+    <LinearLayout
+        android:id="@+id/menutwopage"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="43dip"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menuonepage"
+        android:layout_width="fill_parent"
+        android:layout_height="58dip"
+        android:layout_marginTop="37dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/mimakuang"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="#FFFFFF" >
+
+                <ImageView
+                    android:id="@+id/searchImage"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:scaleType="center"
+                    android:src="@drawable/search_pop" />
+
+<!--                 <AutoCompleteTextView -->
+<!--                 android:id="@+id/search_edt" -->
+<!--                 android:singleLine="true" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="22dip" -->
+<!--                 android:layout_gravity="center_vertical" -->
+<!--                 android:layout_marginLeft="5dip" -->
+<!--                 android:layout_marginRight="5dip" -->
+<!--                 android:background="@null" -->
+<!--                 android:completionThreshold="1" -->
+<!--                 android:dropDownAnchor="@id/menutwopage" -->
+<!--                 android:dropDownHeight="fill_parent" -->
+<!--                 android:dropDownWidth="fill_parent" -->
+<!--                 android:gravity="left|center_vertical" -->
+<!--                 android:hint="请输入影院名称:" -->
+<!--                 android:textSize="16sp" /> -->
+
+                <EditText
+                    android:id="@+id/search_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="22dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:gravity="left|center_vertical"
+                    android:hint="请输入影院名称"
+                    android:textSize="16sp">
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dip"
+            android:scaleType="center"
+            android:src="@drawable/quxiao" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/messageListView"
+        android:layout_below="@id/menuonepage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#FFFFFF"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/line1"
+        android:dividerHeight="0.05dip"
+        android:fadingEdge="none"
+        android:layout_marginRight="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="3dip"
+        android:visibility="invisible"
+        android:footerDividersEnabled="false"
+        android:scrollbars="none" />
+<TextView android:id="@+id/no_ciname_message" android:layout_width="fill_parent"  android:layout_height="fill_parent" android:background="#FFFFFF"   android:layout_marginRight="10dip"
+        android:layout_marginLeft="10dip" android:layout_below="@id/menuonepage" android:gravity="center_horizontal" android:visibility="gone"
+        android:layout_marginTop="3dip" android:text="没有与其相应的影院！" android:textColor="#000000" android:padding="10dip" android:textSize="18sp"/>
+</RelativeLayout>

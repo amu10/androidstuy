@@ -1,0 +1,47 @@
+#===============App set========================
+app.name=cmcc_movie_android
+app.version=2.1
+
+#path.workspace = D:/android/workspace
+#path.main = ${path.workspace}/Movie_szcmcc_2.1
+#jenkins need 
+path.workspace=/Users/Shared/Jenkins/Home/jobs/SZaidianying_android/workspace/
+path.main = ${path.workspace}/SZaidianying
+
+#keystore=${path.main}/build/cmcc_jiaotong.key
+#keystore.password=cmcc_jiaotong
+#keystore.alias=\u4EA4\u901A\u64AD\u62A5
+#jenkins need 
+keystore=${path.main}/build/itotem.keystore
+keystore.password=itotem
+keystore.alias=itotemApp
+#--------------------------------
+path.gen = ${path.main}/gen
+path.bin = ${path.main}/bin
+path.libs = ${path.main}/libs
+path.bin.classes = ${path.main}/bin/classes
+path.native =  ${path.main}/libs/armeabi
+path.out = ${path.main}/out
+file.channel.ids = ${path.main}/build/ids.cfg
+
+#=============Android set======================
+android.api.version=17
+#android.home=${env.ANDROID_HOME}
+#jenkins need
+android.home=/Users/Shared/adt-bundle-mac-x86_64/sdk
+
+android.tools=${android.home}/tools
+android.sdk.folder=${android.home}/platforms/android-${android.api.version}
+android.sdk.tools=${android.home}/platform-tools
+android-framework="${android.sdk.folder}/framework.aidl
+android-jar=${android.sdk.folder}/android.jar
+google.map.path=${android.home}/add-ons/addon_google_apis_google_inc_${android.api.version}/libs/
+maps-jar=${external-libs}/maps.jar 
+  
+#===============Java&Ant set======================
+#jdk.home=${env.JAVA_HOME}
+#jenkins need
+jdk.home=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+jdk.bin.dir=${jdk.home}/bin
+#ant.home=D:/eclipse/plugins/org.apache.ant_1.8.2.v20120109-1030
+ant.home=${env.ANT_HOME}

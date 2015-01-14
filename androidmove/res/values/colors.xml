@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="name_white">#B1AFAD</color>
+    <color name="name_orange">#B35201</color>
+    <color name="seat_num">#6A6862</color>
+    <color name="pay_success">#6A6862</color>
+    <color name="pay_wait">#FB9B66</color>
+    <color name="pay_use">#CFCFCF</color>
+    <color name="seat_unoder">#308AB9</color>
+    <color name="seat_lable">#6A6862</color>
+    <color name="city_title">#4FB2ED</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="city_popup">#99000088</color>
+    <color name="tuan_name">#326699</color>
+    <color name="distance_back">#7A868E</color>
+    <color name="item_text">#333333</color>
+    <color name="tuan_name1">#336699</color>
+    <color name="blue">#0B7D7B</color>
+    <color name="color_movie_text_score">#E5B80C</color>
+    <color name="color_movie_text_date">#1B6A92</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="title_bar_text_shadowColor">#C9C8C7</color>
+    <color name="title_bar_text_color">#FFFFFF</color>
+    <color name="seat_select_coordinate_heng">#525252</color>
+    <color name="seat_select_coordinate_shu">#AAAAAA</color>
+    <color name="seat_select_no">#D0D0D0</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_num_gray">#333</color>
+    <color name="dialog_title_blue">#9CCCF7</color>
+    <!-- zhangsiqi -->
+    <color name="blue_top">#44a0ce</color>
+    <color name="light_gray">#818181</color>
+    <color name="zsq_white">#bfbfbf</color>
+
+</resources>

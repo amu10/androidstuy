@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/bigimage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        />
+<!--         android:src="@drawable/main"  -->
+
+    <!-- 中间 -->
+    <!-- 评论列表S -->
+
+    <RelativeLayout
+        android:background="@drawable/black"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       >
+
+        <ListView
+              android:background="@drawable/black"
+            android:id="@+id/morepinlun_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:cacheColorHint="#00000000"
+            android:divider="#FFFFFF"
+            android:dividerHeight="0.5dip"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:scrollbars="none" />
+    </RelativeLayout>
+    <!-- 评论列表E -->
+    <!-- 购票 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginBottom="8dip"
+            android:background="@drawable/buyticket_bg2"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="60dip"
+                android:gravity="center"
+                android:text="金陵十三钗"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="7dip"
+                android:gravity="center"
+                android:text="购票"
+                android:textColor="#010101"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 信号栏s -->
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/title_bg" />
+
+        <com.szcmcc.movie.view.BackImageLinear
+            android:layout_width="39dip"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.BackImageView
+                android:id="@+id/back"
+                android:layout_width="39dip"
+                android:layout_height="28dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/back_btn_selector"
+                android:scaleType="center" />
+        </com.szcmcc.movie.view.BackImageLinear>
+
+        <!-- <TextView -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1.0" -->
+        <!-- android:text="" /> -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.HomeImageLayout
+                android:id="@+id/homeLayout"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|right"
+                android:paddingBottom="5dip"
+                android:scaleType="center" >
+
+                <com.szcmcc.movie.view.HomeImageView
+                    android:id="@+id/home"
+                    android:layout_width="30dip"
+                    android:layout_height="24dip"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginTop="1dip"
+                    android:background="@drawable/home_btn_selector"
+                    android:scaleType="center" />
+            </com.szcmcc.movie.view.HomeImageLayout>
+
+            <com.szcmcc.movie.view.TimeTextView
+                android:id="@+id/currentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="23dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="7dip"
+                android:gravity="center"
+                android:text="12:34"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.szcmcc.movie.view.NetImageView
+                android:id="@+id/net"
+                android:layout_width="30dip"
+                android:layout_height="24dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="1dip"
+                android:layout_marginRight="5dip"
+                android:scaleType="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 信号栏E -->
+
+
+    <!-- 更多影片S -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="true" >
+
+        <ListView
+            android:id="@+id/more_listview"
+            android:layout_width="123dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/black"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:listSelector="@drawable/listview_item_selector"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/listview_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginTop="40dip"
+            android:layout_toLeftOf="@id/more_listview"
+            android:scaleType="center"
+            android:src="@drawable/more_film" />
+    </RelativeLayout>
+    <!-- 更多影片E -->
+
+    <ImageView
+        android:id="@+id/write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/write_pinlun"
+        android:scaleType="center" />
+
+</RelativeLayout>

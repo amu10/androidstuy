@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="85dip"
+    android:layout_height="125dip"
+    android:gravity="center"
+    android:background="@drawable/buyticket_image">
+	<ImageView
+	    android:id="@+id/gallery_image"
+	    android:layout_width="80dip"
+	    android:layout_height="118dip"/>
+<!-- 	    android:background="@drawable/buyticket_image"/> -->
+<!-- 	    android:background="@drawable/buyticket_gallery_image_bg"/> -->
+</LinearLayout>

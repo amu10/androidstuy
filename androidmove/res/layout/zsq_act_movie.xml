@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zsq_main_bg" >
+
+    <LinearLayout
+        android:id="@+id/lvTob"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="6dip"
+        android:background="@drawable/top_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip" >
+
+        <ImageButton
+            android:id="@+id/imHot"
+            android:layout_width="87dip"
+            android:layout_height="36dip"
+            android:background="@drawable/zsq_blue_hot_b"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:id="@+id/imWill"
+            android:layout_width="87dip"
+            android:layout_height="36dip"
+            android:background="@drawable/zsq_blue_will"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:id="@+id/imInfo"
+            android:layout_width="87dip"
+            android:layout_height="36dip"
+            android:background="@drawable/zsq_blue_info"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lvMoivePic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lvTob"
+        android:orientation="vertical" >
+
+        <com.szcmcc.movie.view.ZSQGalleryView
+            android:id="@+id/gallery1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dip"
+            android:layout_weight="1"
+            android:focusable="false" />
+
+        <com.szcmcc.movie.view.ZSQGalleryView
+            android:id="@+id/gallery2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dip"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lvBottom"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="8dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvMovieName"
+                style="@style/white17"
+                android:layout_width="180dip"
+                android:layout_height="30dip"
+                android:layout_marginRight="5dip"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvReleaseDate"
+                style="@style/white14"
+                android:layout_width="80dip"
+                android:layout_height="30dip"
+                android:layout_marginTop="6dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <RatingBar
+                android:id="@+id/rbar"
+                style="@style/rateMovieRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/tvRate"
+                style="@style/yellow16"
+                android:layout_width="30dip"
+                android:layout_height="20dip"
+                android:layout_marginLeft="5dip"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lightLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="132dip"
+        android:layout_below="@+id/lvTob"
+        android:layout_marginTop="-5dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="119dip"
+            android:layout_height="132dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/light" >
+        </ImageView>
+
+        <ImageView
+            android:layout_width="119dip"
+            android:layout_height="132dip"
+            android:background="@drawable/light" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lvMovieInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvTob"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.szcmcc.movie.view.TabPageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"
+            android:layout_marginTop="4dip"
+            android:background="@drawable/zsq_classify_bg" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/default_bg"
+    android:orientation="vertical" >
+
+    <!-- 信号栏s -->
+
+   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/title_bg" >
+
+        <ImageButton
+            android:id="@+id/imBack"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_btn_selector" />
+    </RelativeLayout>
+
+    <!-- 信号栏E -->
+    <!-- 标题 S -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="32dip" >
+
+        <TextView
+            android:id="@+id/buyresult"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#D96B21"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <!-- 标题E -->
+    <!-- 中间 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 功能设置 S -->
+
+        <LinearLayout
+            android:id="@+id/autopwd_l"
+            android:layout_width="fill_parent"
+            android:layout_height="230dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dip"
+            android:background="@drawable/baisebeijing"
+            android:orientation="vertical"
+            android:padding="30dip" >
+
+            <!-- 一行S -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="收票手机号码:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#535353"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/sevcphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!-- 一行E -->
+
+
+            <!-- 二行S -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:text="确认短信将发送至此手机号,请注意查收!"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#D96B21"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <!-- 二行E -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="" />
+            <!-- 三行S -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="25dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="适用影院:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#535353"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/c_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!-- 三行E -->
+
+
+            <!-- 四行S -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="有效期:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#535353"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!-- 四行E -->
+
+
+            <!-- 四行S -->
+            <!-- <LinearLayout android:orientation="horizontal" -->
+            <!-- android:layout_gravity="center_vertical" android:layout_width="fill_parent" -->
+            <!-- android:layout_marginTop="5dip" android:layout_height="wrap_content"> -->
+            <!-- <TextView android:layout_width="wrap_content" -->
+            <!-- android:layout_gravity="center_vertical" android:textAppearance="?android:attr/textAppearanceMedium" -->
+            <!-- android:textColor="#000000" android:textSize="17sp" -->
+            <!-- android:layout_height="24dip" android:gravity="center" -->
+            <!-- android:text="兑换券票价:" /> -->
+            <!-- <TextView android:layout_width="wrap_content" -->
+            <!-- android:layout_marginLeft="5dip" android:layout_gravity="center_vertical" -->
+            <!-- android:textAppearance="?android:attr/textAppearanceMedium" -->
+            <!-- android:textColor="#0B90D2" android:textSize="17sp" -->
+            <!-- android:layout_height="24dip" android:gravity="center" -->
+            <!-- android:text="¥" /> -->
+            <!-- <TextView android:layout_width="wrap_content" -->
+            <!-- android:layout_marginLeft="5dip" android:layout_gravity="center_vertical" -->
+            <!-- android:textAppearance="?android:attr/textAppearanceMedium" -->
+            <!-- android:textColor="#0B90D2" android:textSize="17sp" -->
+            <!-- android:layout_height="24dip" android:gravity="center" -->
+            <!-- android:text="45" /> -->
+            <!-- </LinearLayout> -->
+            <!-- 四行E -->
+
+
+            <!-- 五行S -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="购买数量:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#535353"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="" />
+            <!-- 四行E -->
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dip"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="11dip"
+                    android:layout_marginRight="11dip"
+                    android:layout_marginTop="20dip"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:singleLine="true"
+                    android:text="温馨提示:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="11dip"
+                    android:layout_marginRight="11dip"
+                    android:layout_marginTop="20dip"
+                    android:gravity="left|center_vertical"
+                    android:text="扣费确认：请按收到的手机支付扣费短信提示进行操作，支付成功后将收到电影兑换票凭证。"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="11dip"
+                    android:layout_marginRight="11dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="left"
+                    android:lineSpacingExtra="3dip"
+                    android:text="现场验证方式:购买成功后,手机将收到短信凭证,到影院现场 向柜员出示该手机短信,经验证通过后再选影片选座位."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

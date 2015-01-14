@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.itotem.sincere"
+    android:id="@+id/share_to_sina_rootlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_background"
+    android:orientation="vertical" >
+
+ <RelativeLayout
+        android:id="@+id/relative_home_detail_layout_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="39dip"
+         >
+        <ImageView
+            android:id="@+id/imageview_share_to_sina_back"
+             android:layout_width="39dip"
+                android:layout_height="28dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_btn_selector" />
+        <TextView
+        	android:id="@+id/text_weibo_login_title"
+            style="@style/title_bar_text_style"
+            android:layout_centerInParent="true"
+            />
+		
+    </RelativeLayout>
+	
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"	
+	>
+    <WebView
+        android:id="@+id/sina_webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/shape_edittext" />
+     <RelativeLayout android:id="@+id/layout_progressbar_share_to_sina"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"	
+        android:background="@color/transparent_background"
+	>
+	    <ProgressBar
+	       android:id="@+id/progressbar_share_to_sina"
+	       style="?android:attr/progressBarStyleLarge"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_centerInParent="true"
+	       />   
+     </RelativeLayout>    
+	</RelativeLayout>
+</LinearLayout>

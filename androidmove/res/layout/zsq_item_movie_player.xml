@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="65dip"
+        android:layout_height="85dip"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="6dip"
+        android:layout_marginTop="10dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zsq_default_icon_play" />
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/white12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivAvatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dip"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="张斯琪" />
+
+</RelativeLayout>

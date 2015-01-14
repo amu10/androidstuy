@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/allowCinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金逸国际"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/filmType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text="2D"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赠  券  码："
+                android:textColor="#A1A1A1"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/verifyCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="2D"
+                android:textColor="#A1A1A1"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有效期限："
+                android:textColor="#A1A1A1"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/validDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="2D"
+                android:textColor="#A1A1A1"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="赠送时间："
+                android:textColor="#A1A1A1"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/presentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="2D"
+                android:textColor="#A1A1A1"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/noUse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未使用"
+                android:textColor="#2281AF"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/hasUse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已使用"
+                android:textColor="#A1A1A1"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_gravity="center"
+        android:background="#C8C8C8" />
+
+</LinearLayout>

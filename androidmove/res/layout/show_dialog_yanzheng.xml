@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+   <ListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+               
+                android:cacheColorHint="#00000000"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="true"
+                android:background="#ffffff"
+                android:focusable="false"
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pay_no"
+            android:layout_width="80dip"
+            android:layout_height="35dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/pay_dialog_button"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pay_ok"
+            android:layout_width="80dip"
+            android:layout_height="35dip"
+            android:background="@drawable/pay_dialog_button"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

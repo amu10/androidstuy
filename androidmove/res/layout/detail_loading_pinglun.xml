@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+     <LinearLayout
+            android:id="@+id/loading_progresslinear"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/black"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                
+                style="@android:style/Widget.ProgressBar.Large"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_marginRight="10dip"
+                android:layout_centerInParent="true"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加载评论中..."
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+</LinearLayout>

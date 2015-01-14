@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="84dip"
+        android:layout_height="54dip"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="14dip"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="14dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zsq_default_icon_review" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/text_white14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivPoster"
+        android:layout_marginLeft="6dip"
+        android:layout_toRightOf="@+id/ivPoster"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tvCreatePerson"
+        style="@style/blue12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvTitle"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="12dip"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/zsq_xy_line" />
+
+</RelativeLayout>

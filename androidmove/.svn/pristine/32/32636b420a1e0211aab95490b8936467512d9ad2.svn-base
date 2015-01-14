@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="5dip"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+       >
+
+        <ImageView
+            android:layout_width="14dip"
+            android:layout_height="13dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="30dip"
+            android:scaleType="center"
+            android:background="@drawable/icon_ren" />
+
+<!--         <TextView -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="24dip" -->
+<!--             android:layout_gravity="center_vertical" -->
+<!--             android:gravity="center" -->
+<!--             android:text="座区号:" -->
+<!--             android:textAppearance="?android:attr/textAppearanceMedium" -->
+<!--             android:textColor="#FFFFFF" -->
+<!--             android:textSize="14sp" /> -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/seatselect_textview_seatcode" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="24dip" -->
+<!--             android:layout_gravity="center_vertical" -->
+<!--             android:layout_marginLeft="5dip" -->
+<!--             android:gravity="center" -->
+<!--             android:text="01" -->
+<!--             android:textAppearance="?android:attr/textAppearanceMedium" -->
+<!--             android:textColor="#FFFFFF" -->
+<!--             android:textSize="14sp" /> -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="座行:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/seatselect_textview_searow"
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:text="08"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="座列:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/seatselect_textview_seatcol"
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:text="09"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

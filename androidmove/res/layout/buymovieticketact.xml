@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zsq_main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/title_bg" >
+
+        <ImageButton
+            android:id="@+id/imBack"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_btn_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="22dip" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="座位票订单信息"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#D96B21"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <!-- 标题E -->
+    <!-- 中间 -->
+
+
+    <!-- 订单信息的布局 -->
+    <RelativeLayout
+        android:id="@+id/relativelayout_order_info"
+        android:layout_width="fill_parent"
+        android:layout_height="180dip"
+        android:background="@drawable/baisebeijing" >
+
+        <ListView
+            android:id="@+id/list_orderinfo_details"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="12dip"
+            android:animationCache="true"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="1.0000dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+    <!-- 订票支付布局 -->
+	<ScrollView android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    android:scrollbars="none"
+	    android:fadingEdge="none"
+	    android:fadingEdgeLength="0dip">
+<!-- 	    <LinearLayout android:layout_width="fill_parent" -->
+<!-- 	        android:layout_height="fill_parent" -->
+<!-- 	        android:orientation="vertical"> -->
+<!-- 	        <LinearLayout -->
+<!-- 		        android:id="@+id/movieSeatinfo_pay_layout" -->
+<!-- 		        android:layout_width="fill_parent" -->
+<!-- 		        android:layout_height="wrap_content" -->
+<!-- 		        android:layout_marginTop="15dip" > -->
+		
+<!-- 		        <ScrollView -->
+<!-- 		            android:layout_width="fill_parent" -->
+<!-- 		            android:layout_height="200dip" -->
+<!-- 		            android:animationCache="true" -->
+<!-- 		            android:cacheColorHint="#00000000" -->
+<!-- 		            android:fadingEdge="none" -->
+<!-- 		            android:scrollbars="none" > -->
+		
+		            <LinearLayout
+		                android:id="@+id/list_orderinfo_pay_style"
+		                android:layout_width="fill_parent"
+		                android:layout_height="fill_parent"
+		                android:layout_marginTop="15dip"
+		                android:layout_marginBottom="15dip"
+		                android:orientation="vertical" >
+		                
+		            </LinearLayout>
+<!-- 		        </ScrollView> -->
+<!-- 		    </LinearLayout> -->
+<!-- 	    </LinearLayout> -->
+	</ScrollView>
+    
+	<RelativeLayout
+        android:id="@+id/relative_pay_now"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/textview_pay_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:src="@drawable/pay_btn_click" />
+    </RelativeLayout>
+</LinearLayout>

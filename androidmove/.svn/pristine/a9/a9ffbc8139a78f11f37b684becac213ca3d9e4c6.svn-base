@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="50dip"
+        android:layout_height="66dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zsq_default_icon_words" />
+
+    <TextView
+        android:id="@+id/tvClassicLines"
+        style="@style/text_white16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@+id/ivPoster"
+        android:ellipsize="end"
+        android:maxLines="10" />
+
+    <TextView
+        android:id="@+id/tvMovieName"
+        style="@style/blue10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvClassicLines"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ivPoster"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/zsq_xy_line" />
+
+</RelativeLayout>

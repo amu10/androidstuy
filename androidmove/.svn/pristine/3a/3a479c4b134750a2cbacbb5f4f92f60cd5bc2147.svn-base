@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.itotem.view.touchimageview.ImageViewTouch
+        android:id="@+id/moviepic_viewpager_imag"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY" />
+
+    
+    <com.szcmcc.movie.view.LoadingImagView
+        android:id="@+id/moviepic_loading_viewpager_progress"
+        android:layout_width="170dip"
+        android:layout_height="190dip"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+   
+
+</RelativeLayout>

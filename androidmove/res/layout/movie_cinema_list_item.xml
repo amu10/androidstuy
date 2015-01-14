@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:background="@drawable/youhui_listview_item_selector"
+	android:orientation="vertical">
+
+	<!-- 电影院 -->
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="90dip" android:orientation="horizontal">
+
+		<RelativeLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+			android:layout_marginLeft="5dip" android:gravity="center"
+			android:background="@drawable/listbg" android:orientation="horizontal">
+
+			<ImageView android:id="@+id/imageUrl" android:layout_width="70dip"
+				android:layout_height="50dip" android:layout_centerInParent="true" />
+		</RelativeLayout>
+		<!-- 顶部 -->
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+			android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+			android:layout_weight="1.0" android:orientation="vertical">
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+
+				<TextView android:id="@+id/name" android:layout_width="140dip"
+					android:layout_height="15dip" android:ellipsize="end"
+					android:gravity="left|center_vertical" android:singleLine="true"
+					android:text="金逸国际影城" android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textSize="13sp" android:textStyle="bold" />
+				<!--  -->
+				<!-- <ImageView -->
+				<!--  -->
+				<!-- android:layout_width="wrap_content" -->
+				<!-- android:layout_height="wrap_content" -->
+				<!-- android:layout_gravity="center_vertical" -->
+				<!--  -->
+				<!-- android:scaleType="center" -->
+				<!-- android:src="@drawable/can_by_ticket" /> -->
+				<TextView android:id="@+id/kedingzuo" android:layout_width="15dip"
+					android:layout_height="15dip" android:layout_gravity="center_vertical"
+					android:layout_marginLeft="3dip" android:background="@drawable/dingzuokuang"
+					android:gravity="center" android:padding="1dip" android:text="座"
+					android:textColor="#eb7600" android:textSize="10sp"
+					android:visibility="gone" />
+
+				<TextView android:id="@+id/kegouquan" android:layout_width="15dip"
+					android:layout_height="16dip" android:layout_gravity="center_vertical"
+					android:layout_marginLeft="3dip" android:background="@drawable/can_by_ticket"
+					android:gravity="center" android:padding="1dip" android:text="券"
+					android:textColor="#1F88C1" android:textSize="10sp"
+					android:visibility="gone" />
+
+
+				<TextView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_weight="1.0"
+					android:text="" />
+
+				<TextView android:id="@+id/meters" android:layout_width="wrap_content"
+					android:layout_height="15dip" android:ellipsize="end"
+					android:gravity="right|center_vertical" android:singleLine="true"
+
+					android:textColor="#2586B3" android:textSize="12sp" />
+			</LinearLayout>
+
+			<TextView android:id="@+id/address" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="4dip"
+				android:ellipsize="end" android:maxLines="2" android:gravity="left|center_vertical"
+				android:text="深圳市福田区福华一路西新怡景商业中心城FG014深圳市福田区福华一路西新怡景商业中心城FG014"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="#969594" android:textSize="13sp" />
+		</LinearLayout>
+
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+			android:layout_marginRight="10dip" android:src="@drawable/rightjian" />
+	</LinearLayout>
+
+	<ImageView android:layout_width="fill_parent"
+		android:layout_height="1dip" android:scaleType="center" android:src="@drawable/line" />
+
+</LinearLayout>

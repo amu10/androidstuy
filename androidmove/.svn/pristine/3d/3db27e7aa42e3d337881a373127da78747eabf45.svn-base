@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zsq_main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/title_bg" >
+
+        <ImageButton
+            android:id="@+id/imBack"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_btn_selector" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="8dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25dip"
+                android:gravity="center"
+                android:text="服务条款"
+                android:textSize="16sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip"
+                android:text="使用深圳爱电影客户端（以下简称：本客户端）前，请您仔细阅读下述条款。如您不同意本服务条款或本客户端对其进行的修改，您可以主动取消本客户端提供的服务；您一旦使用本客户端提供的服务，即视为您已了解并完全同意本服务条款各项内容，包括本客户端对服务条款所做的任何修改，并成为本客户端的用户（以下简称“用户”）。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="1、版权归属"
+                android:textColor="#ffffff"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="中国移动通信集团广东有限公司深圳分公司（以下简称“深圳移动”，独立拥有本客户端内所有资料的版权，或与本客户端内的资料提供者共同拥有该资料的版权。未经深圳移动的明确书面许可，对于本客户端上的任何内容，任何人不得对其进行复制、转载、修改、传播或在非深圳移动所属的服务器上做镜像。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="2、负责声明"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（1）用户接入无线城市前应当认真阅读以下的无线城市使用注意事项和声明并予以严格遵守。用户使用无线城市客户端服务应当自觉遵守政府对无线城市、互联网、信息安全等相关管理法规的约束，并承担由此带来的一切后果。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（2）深圳移动在客户端发布的内容仅供一般性质及说明用途使用，由于信息可能存在滞后性，用户引用或使用前应当按内容性质通过正确途径予以核实和确认。深圳移动不会就本客户端内容任何错误、遗漏、或错误陈述或失实陈述（不论明示或默示的）承担任何责任。对任何因使用或不当使用客户端所载的资料而导致的损失、毁坏或损害，将由用户自行承担，深圳移动不承担任何义务或责任。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（3）对于“客户端”所发布的信息仅供用户浏览性使用，深圳移动不声明或保证其内容之时效性、正确性或完整性；对于用户通过本客户端有关服务之广告、信息或要约而购买或取得之任何产品、信息或服务，由提供者承担责任，用户应当自行对购买产品或服务进行识别和确认，深圳移动及本客户端不承担任何质量保证之责任。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（4）对“客户端”提供的服务本客户端不提供任何明示或默示的担保或保证，包含但不限于商业适售性、特定目的之适用性及未侵害他人权利等担保或保证。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（5）深圳移动所提供的客户端服务是市民获取其他相关服务的渠道。用户使用相关服务时应当自行确定获取服务的有效性，在无法确认有效性时应当及时采取其他渠道获取服务。对任何因使用或不当使用客户端提供的服务而导致的损失、毁坏或损害，深圳移动不承担任何义务或责任。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（6）为提供更完善的服务，本客户端可能提供相关信息的连接，可能直接进入其他站点，这些链接的站点不受本客户端的控制，并不代表深圳移动赞同或默认被链接网站的内容，深圳移动对链接的网站不作出任何明示或暗示的声明、陈述或保证；用户应当自行对相关链接内容进行识别，对任何因使用或不当使用链接网站的内容而导致的损失、毁坏或损害，深圳移动不承担任何义务或责任。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（7）客户端转载的相关文章、资料中表述或暗示的观点仅作为其发表人之言论观点，不代表深圳移动的观点和立场。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（8）客户端所提供的信息，若在某地区使用或分发时会违反该地区的法律或规定，则不得在该地区使用或分发本客户端信息。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（9）本客户端所提供的多语言版本中，如果出现字面的矛盾，一律以简体中文版进行解释，由于语言版本而导致的使用或不当使用链接网站的内容而导致的损失、毁坏或损害，深圳移动不承担任何义务或责任。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（10）遵循互利互惠的原则进行内容合作。所转载的信息版权均由信息提供方授权本客户端发布使用，如有任何遗漏或错误，请权利人与我们联系并提供相应的证明资料。我们将按法律规定及时予以处理。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="3、隐私权保护"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（1）用户在匿名的状态下即可使用我们的本客户端并获取信息。在本客户端请求用户提供有关信息之前，本网站会解释这些信息的用途，有些服务需要用户注册后才能够提供。在通常情况下，这类注册只要求用户提供一个电子邮件地址和一些诸如用户的工作、职务一类的基本信息。有时本客户端也会请用户提供更多的信息，这样做是为了使本客户端更好的理解和实现用户的需求，以便向用户提供更为有效的服务。本客户端收集的信息包括姓名，地址和移动电话号码等其他必要信息，用户有权随时决定不接受来自我们的任何资料。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（2）用户的注册义务 用户如希望使用本客户端需注册后才能够提供的服务，应同意以下事项∶依本服务注册表之提示提供您本人真实、正确、最新及完整的资料，并随时更新登记资料，确保其为真实、正确、最新及完整的资料。若您提供任何错误、不实、过时或不完整或具误导性的资料，或者本网站有理由怀疑前述资料为错误、不实、过时或不完整或具误导性的，本客户端有权暂停或终止您的帐号，并拒绝您于现在和未来使用本客户端所提供服务之全部或任何部分。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（3）本客户端将采取合理的安全手段保护用户已存储的个人信息，除非根据法律或政府的强制性规定，在未得到用户许可之前，本客户端不会将用户的任何个人信息提供给任何无关的第三方（包括公司或个人）。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（4）用户应妥善保管个人信息，包括但不限于手机号码、服务密码、验证码、注册信息等其他个人信息，一切符合本客户端要求规则利用以上信息通过鉴权后所实施的行为均被视为用户本人行为，因用户保管不善产生的后果由用户自行承担。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（5）用户应了解：本客户端可能会应法律之要求公开个人资料，或者因善意确信这样的作法对于下列各项有其必要性："
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（i）符合法律公告或遵守适用于中国移动通信集团广东有限公司网站的合法程序；"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（ii）保护本客户端用户的权利或财产；"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="（iii）在紧急的情况下，为了保护本客户端及其用户之个人或公众安全。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="4、预测性陈述"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="本客户端所发布的信息中可能会包含某些预测性的陈述。这些陈述本质上具有相当风险和不确定性，对本客户端所发布的有关中国移动通信集团广东有限公司及相关业务的预测性陈述，目的均是要指明其属预测性陈述，本公司并不打算不断地更新这些预测性陈述。此等预测性陈述反映本公司对未来事件的目前看法，而并非关于将来业务表现的保证。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="5、知识产权"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="本客户端所载述的域名商标、文字、视像及声音内容、图形及图象均受有关商标和著作权的法律保护。未经深圳移动事先以书面明确允许，任何企业或个人不得以任何形式复制、修改、转载、抄录、传播或与其它产品捆绑使用、销售。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="6、本客户端如因系统维护或升级而需暂停服务时，将事先公告。若因线路及非本客户端控制范围外的硬件故障或其它不可抗力而导致暂停服务，对于暂停服务期间造成的一切不便与损失，本客户端不负任何责任。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zsq_main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/title_bg" >
+
+        <ImageButton
+            android:id="@+id/imBack"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_btn_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ping_l"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#14010B"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="19dip"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="14dip"
+            android:layout_marginRight="20dip"
+            android:gravity="center"
+            android:text="评分:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="10dip"
+            android:orientation="horizontal" >
+
+            <RatingBar
+                android:id="@+id/rating"
+                style="@style/scoreRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="25dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="11dip"
+                android:gravity="center_vertical"
+                android:numStars="5"
+                android:rating="5" />
+
+            <TextView
+                android:id="@+id/point"
+                android:layout_width="wrap_content"
+                android:layout_height="19dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="3dip"
+                android:text="5.0"
+                android:textColor="#DBB502"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/fabiao"
+            android:layout_width="47dip"
+            android:layout_height="27dip"
+            android:layout_gravity="center_vertical|right"
+            android:background="@drawable/fabiao"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/frame"
+            android:layout_width="fill_parent"
+            android:layout_height="170dip"
+            android:layout_marginLeft="11dip"
+            android:layout_marginRight="11dip"
+            android:layout_marginTop="12dip"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="8dip" >
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="fill_parent"
+                android:layout_height="120dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="写下您的评论"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/frame"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="11dip"
+            android:layout_marginRight="11dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="" />
+
+            <CheckBox
+                android:id="@+id/check"
+                style="@style/MyCheckBox"
+                android:layout_width="30dip"
+                android:layout_height="25dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3dip"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/checkText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dip"
+                android:text="同时发表到新浪微博"
+                android:textColor="#9A9A9A"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

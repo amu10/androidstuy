@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/brown_background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingTop="40dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:id="@+id/title_layout" >
+
+                <TextView
+                    android:id="@+id/cinemaDetailButton"
+                    android:layout_width="80dip"
+                    android:layout_height="30dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/movie_detail_button"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="2dip"
+                    android:paddingLeft="20dip"
+                    android:text="影院详情"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center" >
+
+                    <com.szcmcc.movie.view.MarqueeTextView
+                        android:id="@+id/cNameTextView"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+
+                    <ImageView
+                        android:id="@+id/title_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dip"
+                        android:background="@drawable/arrow_down" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/buyDuihuanTicket"
+                    android:layout_width="83dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/buyticket_coupon"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="2dip"
+                    android:paddingLeft="23dip"
+                    android:text="购兑换券"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/parentLinear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <HorizontalScrollView
+                    android:id="@+id/quyuScrollview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/zsq_classify_bg"
+                    android:cacheColorHint="@android:color/transparent" >
+
+                    <LinearLayout
+                        android:id="@+id/quyu_linear"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:id="@+id/cinema_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buyticket_list_parentgroup"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 图片 -->
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalscrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_layout"
+                android:background="#FF313131" >
+
+                <LinearLayout
+                    android:id="@+id/image_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/lvMovie"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip" >
+
+                <com.szcmcc.movie.view.MarqueeTextView
+                    android:id="@+id/mNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="140dip"
+                    android:layout_height="20dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical" >
+
+                    <RatingBar
+                        android:id="@+id/ratingBar_score"
+                        style="@style/buyticketscoreRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dip"
+                        android:layout_gravity="center_vertical"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="0" />
+
+                    <TextView
+                        android:id="@+id/textView_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:gravity="center"
+                        android:textColor="#DBB502"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/jiantou_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buyticketact_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/horizontalscrollview"
+                android:layout_marginTop="10dip" >
+
+                <TextView
+                    android:id="@+id/time_today"
+                    android:layout_width="110dip"
+                    android:layout_height="30dip"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/buyticket_time"
+                    android:gravity="center"
+                    android:text="2012-12-12(今)"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/time_tomorrow"
+                    android:layout_width="110dip"
+                    android:layout_height="30dip"
+                    android:gravity="center"
+                    android:text="2012-12-13(明)"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/prepare_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/duihuanMessage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:padding="10dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tuihuantext1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1、本电影暂不支持在线选座功能,仅提电影兑换券购买;"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tuihuantext2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2、电影兑换券限定在本影院现场选座使用,有效期1个月;"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tuihuantext3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3、情人节、圣诞节等特殊节假日不可使用,兑换3D电影请咨询影院。"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- 信号栏s -->
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:background="@drawable/title_bg" />
+
+        <com.szcmcc.movie.view.BackImageLinear
+            android:layout_width="39dip"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.BackImageView
+                android:id="@+id/back"
+                android:layout_width="39dip"
+                android:layout_height="28dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/back_btn_selector"
+                android:scaleType="center" />
+        </com.szcmcc.movie.view.BackImageLinear>
+    </RelativeLayout>
+    <!-- 信号栏E -->
+
+</RelativeLayout>

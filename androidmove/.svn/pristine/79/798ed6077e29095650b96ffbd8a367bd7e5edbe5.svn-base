@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout
+        android:id="@+id/choosePhonePayType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="25dip"
+        
+       >
+<!-- android:paddingLeft="47dip" -->
+        <ImageView
+                android:id="@+id/checkboxPayAll"
+                android:layout_width="27dip"
+                android:layout_height="27dip"
+                android:background="@drawable/checkbox" />
+        <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="全额支付"
+                android:textSize="14sp" />
+        <ImageView
+                android:id="@+id/checkboxPayYouhui"
+                android:layout_width="27dip"
+                android:layout_height="27dip"
+                android:layout_marginLeft="15dip"
+                android:background="@drawable/checkbox" />
+        <TextView
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="抵扣券支付"
+                android:textSize="14sp" />
+        
+    </LinearLayout>
+</LinearLayout>

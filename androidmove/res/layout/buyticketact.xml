@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/bigimage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="#70000000"
+        android:scaleType="fitCenter" />
+    <!-- 中间 -->
+    <!-- <ScrollView android:scrollbars="none" android:id="@+id/scrollview" -->
+    <!-- android:layout_marginTop="37dip" android:layout_width="fill_parent" -->
+    <!-- android:fadingEdge="none" android:layout_height="fill_parent"> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical" >
+
+        <!-- 竖直滑动 -->
+
+
+        <!-- 一横两竖 -->
+
+        <LinearLayout
+            android:id="@+id/context"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- 一竖S# -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="255dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dip"
+                android:layout_weight="2"
+                android:background="@drawable/currbg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/name_bg"
+                    android:orientation="horizontal" >
+
+                    <com.szcmcc.movie.view.MarqueeTextView
+                        android:id="@+id/m_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dip"
+                        android:gravity="left|center_vertical"
+                        android:text=""
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:text="" />
+                    <!-- <ImageButton android:layout_width="32dip" android:src="@drawable/icon" -->
+                    <!-- android:layout_marginRight="15dip" android:layout_marginLeft="10dip" -->
+                    <!--
+                         android:layout_height="32dip" android:layout_gravity="center_vertical|right" 
+						/>
+                    -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dip"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/leftl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/leftl_textview"
+                                android:layout_width="40dip"
+                                android:layout_height="23dip"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="2dip"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="12dip"
+                                android:layout_height="8dip"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="3dip"
+                                android:background="@drawable/jiantou"
+                                android:scaleType="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/rgithl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/rgithl_textview"
+                                android:layout_width="90dip"
+                                android:layout_height="23dip"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="2dip"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="12dip"
+                                android:layout_height="8dip"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="3dip"
+                                android:background="@drawable/jiantou"
+                                android:scaleType="center" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dip"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dip"
+                        android:gravity="left"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/yingyuanxiangqing"
+                            android:layout_width="75dip"
+                            android:layout_height="25dip"
+                            android:layout_marginRight="10dip"
+                            android:background="@drawable/xiangqingdianji"
+                            android:scaleType="center" />
+
+                        <ImageView
+                            android:id="@+id/duihuanquan"
+                            android:layout_width="75dip"
+                            android:layout_height="25dip"
+                            android:layout_marginRight="10dip"
+                            android:background="@drawable/duihuapiaodianji"
+                            android:scaleType="center"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/zuoweipiao"
+                            android:layout_width="75dip"
+                            android:layout_height="25dip"
+                            android:layout_marginRight="10dip"
+                            android:background="@drawable/zuoweipiaodianji"
+                            android:scaleType="center"
+                            android:visibility="gone" />
+                        <!-- <ImageView android:layout_width="73dip" android:id="@+id/duihuangquan" -->
+                        <!-- android:background="#2578A2" android:layout_height="25dip" /> -->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="15dip"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/jian"
+                            android:layout_width="14dip"
+                            android:layout_height="22dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="3dip"
+                            android:src="@drawable/zuojiantou"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/zhangshu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dip"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="2dip"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/jia"
+                            android:layout_width="14dip"
+                            android:layout_height="22dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="3dip"
+                            android:src="@drawable/youjiantou"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <!-- 早S -->
+
+                    <LinearLayout
+                        android:id="@+id/line1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="3dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="21dip"
+                            android:layout_height="17dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="3dip"
+                            android:background="@drawable/icon_zaoshang" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="3dip"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="早"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="2dip"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="07:00~12:00"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/zaoshang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="13dip"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="2dip"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="场"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="" />
+
+                        <ImageView
+                            android:id="@+id/zao_jiantou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2dip"
+                            android:src="@drawable/arrow_flag"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="" />
+                    </LinearLayout>
+                    <!-- 早 E -->
+
+
+                    <!-- 中S -->
+
+                    <LinearLayout
+                        android:id="@+id/line2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="3dip"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="17dip"
+                            android:layout_height="17dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="3dip"
+                            android:background="@drawable/icon_zhongwu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="7dip"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="午"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dip"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="12:00~18:00"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/zhongwu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dip"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="2dip"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="场"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="" />
+
+                        <ImageView
+                            android:id="@+id/wu_jiantou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2dip"
+                            android:src="@drawable/arrow_flag"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="" />
+                    </LinearLayout>
+                    <!-- 中 E -->
+
+
+                    <!-- 晚S -->
+
+                    <LinearLayout
+                        android:id="@+id/line3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="3dip"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="16dip"
+                            android:layout_height="15dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2dip"
+                            android:layout_marginRight="3dip"
+                            android:background="@drawable/icon_yejian" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="7dip"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="晚"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dip"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="18:00~24:00"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/wanshang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dip"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="2dip"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="场"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="" />
+
+                        <ImageView
+                            android:id="@+id/wan_jiantou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="2dip"
+                            android:src="@drawable/arrow_flag"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:text="" />
+                    </LinearLayout>
+                    <!-- 晚 E -->
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 一竖E# -->
+
+
+            <!-- 一竖 S -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="286dip"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="3"
+                android:background="@drawable/morebg"
+                android:orientation="vertical"
+                android:paddingBottom="16dip"
+                android:paddingTop="23dip" >
+
+                <!-- 每场票价 -->
+
+                <TextView
+                    android:id="@+id/no_changci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="暂无场次信息！"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <ListView
+                    android:id="@+id/movie_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:cacheColorHint="#00000000"
+                    android:fadingEdge="none"
+                    android:divider="#888888"
+                    android:dividerHeight="0.5dip"
+                    android:listSelector="@drawable/ticket_listview_item_selector"
+                    android:scrollbars="none"
+                    android:visibility="visible" />
+            </RelativeLayout>
+            <!-- 一竖 E -->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            
+            <!-- 座位S -->
+            <!-- 临时更改S -->
+            <!-- <LinearLayout -->
+            <!-- android:id="@+id/seatsll" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="fill_parent" -->
+            <!-- android:layout_marginLeft="3dip" -->
+            <!-- android:layout_marginRight="3dip" -->
+            <!-- android:layout_marginTop="3dip" -->
+            <!-- android:layout_weight="3" -->
+            <!-- android:background="@drawable/zuoweibeijing" -->
+            <!-- android:gravity="center" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <ImageView -->
+            <!-- android:layout_width="40dip" -->
+            <!-- android:layout_height="47dip" -->
+            <!-- android:background="@drawable/wait2" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:textSize="13sp" -->
+            <!-- android:layout_marginTop="10dip" -->
+            <!-- android:text="订座功能即将开放，请耐心等待～" /> -->
+            <!-- </LinearLayout> -->
+            <!-- 临时更改E -->
+
+            <LinearLayout
+                android:id="@+id/seatsl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="3"
+                android:background="@drawable/pinlunbeijing"
+                android:orientation="vertical" >
+
+                <!-- android:visibility="gone" -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dip"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#6A6862"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/goseatselected"
+                        android:layout_width="75dip"
+                        android:layout_height="25dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="1dip"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/gouzuopiao_button"
+                        android:textColor="#010101"
+                        android:textSize="20sp"
+                        android:textStyle="bold" 
+                        android:visibility="gone"/>
+                    
+                    <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                
+                android:background="@drawable/screen_word"
+                 />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_marginTop="1dip"
+                    android:orientation="horizontal"
+                    android:padding="1dip" >
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <ProgressBar
+                        android:id="@+id/getseat_loading_progress"
+                        style="@android:style/Widget.ProgressBar.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/yizhankexuanLinear"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginTop="3dip"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="3dip"
+                            android:background="@drawable/seat_use" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="15dip"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="可选座位"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="3dip"
+                            android:background="@drawable/seat_unuse" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="2dip"
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="已占座位"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_above="@id/yizhankexuanLinear"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="1dip"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="1dip"
+                        android:layout_marginTop="5dip"
+                        android:fadingEdge="none"
+                        android:padding="1dip"
+                        android:scrollbars="none" >
+
+                        <!-- <LinearLayout> -->
+
+                        <com.itotem.view.zoomview.ViewZoomTouch
+                            android:id="@+id/container_l"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" >
+
+                            <!-- <GridView android:id="@+id/gridview" android:layout_width="fill_parent" -->
+                            <!-- android:layout_height="fill_parent" android:background="#ffffff" -->
+                            <!-- android:numColumns="20" android:columnWidth="20dip" -->
+                            <!-- android:layout_gravity="center" android:fadingEdge="none" android:scrollbars="none" -->
+                            <!-- android:horizontalSpacing="2dip" android:verticalSpacing="2dip" -->
+                            <!-- android:stretchMode="columnWidth" -->
+                            <!-- android:gravity="center" /> -->
+                        </com.itotem.view.zoomview.ViewZoomTouch>
+                        <!-- </LinearLayout> -->
+                    </ScrollView>
+
+                    <TextView
+                    android:id="@+id/seat_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:text="无座位信息"
+                    android:visibility="gone" />
+                    
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 座位E -->
+
+
+            <!-- 兑换票S -->
+
+            <LinearLayout
+                android:id="@+id/duihuan"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="3"
+                android:background="@drawable/zuoweibeijing"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingTop="10dip"
+                android:visibility="invisible" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/duihuanpiaoTitle"
+                            android:layout_width="100dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="兑换券折后票价: "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/duihuanpiaoMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/color_movie_text_date"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/duihuanquanBuy"
+                        android:layout_width="45dip"
+                        android:layout_height="25dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dip"
+                        android:background="@drawable/goumai"
+                        android:textColor="#010101"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" 
+                    android:padding="10dip">
+
+                    <TextView
+                        android:id="@+id/tuihuantext1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1、本电影暂不支持在线选座功能,仅提电影兑换券购买;"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tuihuantext2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2、电影兑换券限定在本影院现场选座使用,有效期1个月;"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tuihuantext3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3、情人节、圣诞节等特殊节假日不可使用,兑换3D电影请咨询影院。"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dip"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="电影兑换券观看《"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#dc5808"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/mName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#dc5808"
+                            android:textSize="13sp" >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="》加价提醒!"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#dc5808"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 信号栏s -->
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/title_bg" />
+
+        <com.szcmcc.movie.view.BackImageLinear
+            android:layout_width="39dip"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.BackImageView
+                android:id="@+id/back"
+                android:layout_width="39dip"
+                android:layout_height="28dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/back_btn_selector"
+                android:scaleType="center" />
+        </com.szcmcc.movie.view.BackImageLinear>
+
+        <!-- <TextView -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1.0" -->
+        <!-- android:text="" /> -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.HomeImageLayout
+                android:id="@+id/homeLayout"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|right"
+                android:paddingBottom="5dip"
+                android:scaleType="center" >
+
+                <com.szcmcc.movie.view.HomeImageView
+                    android:id="@+id/home"
+                    android:layout_width="30dip"
+                    android:layout_height="24dip"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginTop="1dip"
+                    android:background="@drawable/home_btn_selector"
+                    android:scaleType="center" />
+            </com.szcmcc.movie.view.HomeImageLayout>
+
+            <com.szcmcc.movie.view.TimeTextView
+                android:id="@+id/currentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="23dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="7dip"
+                android:gravity="center"
+                android:text="12:34"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.szcmcc.movie.view.NetImageView
+                android:id="@+id/net"
+                android:layout_width="30dip"
+                android:layout_height="24dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="1dip"
+                android:layout_marginRight="5dip"
+                android:scaleType="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/chooseLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="3dip"
+        android:layout_weight="4"
+        android:background="@drawable/zuoweibeijing"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/zuoweibeijing" >
+
+            <Button
+                android:id="@+id/chooseBack"
+                android:layout_width="50dip"
+                android:layout_height="35dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:gravity="center"
+                android:text="取消"
+                android:textSize="12sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/chooseOk"
+                android:layout_width="50dip"
+                android:layout_height="35dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:gravity="center"
+                android:text="确定"
+                android:textSize="12sp" >
+            </Button>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#C6E2FF"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <com.szcmcc.movie.view.WheelView
+                android:id="@+id/country"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <com.szcmcc.movie.view.WheelView
+                android:id="@+id/city"
+                android:layout_width="220dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

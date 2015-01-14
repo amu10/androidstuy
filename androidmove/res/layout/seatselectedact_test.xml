@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/bigimage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        />
+
+    <!-- 信号栏s -->
+
+   <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="25dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/title_bg" />
+
+         <com.szcmcc.movie.view.BackImageLinear
+            android:layout_width="30dip"
+            android:layout_height="25dip"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.BackImageView
+                android:id="@+id/back"
+                android:layout_width="20dip"
+                android:layout_height="14dip"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dip"
+                android:scaleType="center"
+                android:background="@drawable/back_btn_selector" />
+        </com.szcmcc.movie.view.BackImageLinear>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.HomeImageLayout  android:id="@+id/homeLayout"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:scaleType="center">
+            <com.szcmcc.movie.view.HomeImageView
+                android:id="@+id/home"
+                android:layout_width="15dip"
+                android:layout_height="13dip"
+                android:layout_marginTop="5dip"
+                android:scaleType="center"
+                android:background="@drawable/home_btn_selector" />
+</com.szcmcc.movie.view.HomeImageLayout>
+            <com.szcmcc.movie.view.TimeTextView
+                android:id="@+id/currentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="23dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="7dip"
+                android:text="12:34"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <com.szcmcc.movie.view.NetImageView
+                android:id="@+id/net"
+                android:layout_width="19dip"
+                android:layout_height="16dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dip"
+                android:scaleType="center"
+                 />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 信号栏E -->
+    <!-- 顶部 E -->
+    <!-- 标题 S -->
+
+
+    <!-- 标题E -->
+    <!-- 中间 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="30dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/lable"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/title"
+                android:layout_below="@id/top"
+                android:background="@drawable/yinmu_bg" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:ellipsize="end"
+                    android:gravity="top|center_horizontal"
+                    android:singleLine="true"
+                    android:text="选择座位"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#D96B21"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- 座位标识S -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/title"
+                    android:layout_marginBottom="3dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="3dip"
+                            android:background="@drawable/seat_use" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dip"
+                            android:ellipsize="end"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="可选座位"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="3dip"
+                            android:background="@drawable/seat_unuse" />
+
+                        <TextView
+                            android:layout_width="80dip"
+                            android:layout_height="21dip"
+                            android:layout_gravity="center_vertical"
+                            android:ellipsize="end"
+                            android:gravity="left|center_vertical"
+                            android:singleLine="true"
+                            android:text="已占座位"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 座位标识E -->
+            </RelativeLayout>
+            <!-- 功能设置 S -->
+            <!-- 座位S -->
+
+            <LinearLayout
+                android:id="@+id/seatsl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dip"
+                android:layout_marginRight="1dip"
+                android:layout_marginTop="3dip"
+                android:layout_weight="1"
+                android:background="@drawable/zuoweibeijing"
+                android:orientation="vertical"
+                android:paddingBottom="5dip"
+                android:paddingLeft="3dip"
+                android:paddingRight="3dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dip"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dip"
+                    android:background="@drawable/byinmu_title"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#6A6862"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+<!--                 <LinearLayout -->
+<!--                     android:id="@+id/container_title" -->
+<!--                     android:layout_width="fill_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_margin="1dip" -->
+<!--                     android:orientation="horizontal" -->
+<!--                     android:padding="1dip" > -->
+<!--                 </LinearLayout> -->
+                <com.itotem.view.scrollview.SyncHorizontalScrollView
+                    android:id="@+id/scroll_view_horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fadingEdge="none"
+                    android:scrollbars="none"
+                    >
+                    <LinearLayout
+                    android:id="@+id/container_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:orientation="horizontal"
+                    android:padding="1dip" >
+                	</LinearLayout>
+                </com.itotem.view.scrollview.SyncHorizontalScrollView>
+                 <LinearLayout
+                    android:id="@+id/container_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <com.itotem.view.scrollview.SyncScrollView
+                    android:id="@+id/scroll_view_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:fadingEdge="none"
+                    android:scrollbars="none"
+                    >
+                     <LinearLayout
+                    android:id="@+id/linear_row_num_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    ></LinearLayout>
+                </com.itotem.view.scrollview.SyncScrollView>
+                <!-- 座位内容 -->
+                <com.itotem.view.scrollview.HVScrollView
+                    android:id="@+id/hv_scroll_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="1dip"
+                    android:fadingEdge="none"
+                    android:padding="1dip"
+                    android:scrollbars="none" 
+                    android:layout_weight="1"
+                    >
+
+                    <com.itotem.view.zoomview.ViewZoomTouch
+                        android:id="@+id/container_l"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+                        </com.itotem.view.zoomview.ViewZoomTouch>
+<!--                     </LinearLayout> -->
+				</com.itotem.view.scrollview.HVScrollView>
+				 <com.itotem.view.scrollview.SyncScrollView
+                    android:id="@+id/scroll_view_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:fadingEdge="none"
+                    android:scrollbars="none"
+                    >
+                    <LinearLayout
+                    android:id="@+id/linear_row_num_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    ></LinearLayout>
+                </com.itotem.view.scrollview.SyncScrollView>
+				</LinearLayout>
+            </LinearLayout>
+            <!-- 座位E -->
+
+            <LinearLayout
+                android:id="@+id/layout_seatselect_showseat"
+                android:layout_width="fill_parent"
+                android:layout_height="123dip"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/zuoweibeijing"
+                android:orientation="vertical"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:paddingTop="10dip" >
+
+                <ListView
+                    android:id="@+id/list_seatselect_showseat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:animationCache="true"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#00000000"
+                    android:dividerHeight="1.0000dp"
+                    fadeEdgetLength="0dp"
+                    android:fadingEdge="none"
+                    android:fastScrollEnabled="true"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wenzibg"
+        android:layout_width="520dip"
+        android:layout_height="70dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dip"
+        android:background="@drawable/wenzi_bg" >
+    </LinearLayout>
+    <!-- 选 择电影票S -->
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="34dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dip"
+                android:layout_gravity="center_vertical"
+                android:text="已选择"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dip"
+                android:layout_gravity="center_vertical"
+                android:text="2"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30dip"
+                android:text="个座位"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gopayseat"
+            android:layout_width="wrap_content"
+            android:layout_height="25dip"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="#010101"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- 选 择电影票E -->
+
+</RelativeLayout>

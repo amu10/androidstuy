@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/default_bg"
+    android:orientation="vertical" >
+
+    <!-- 信号栏s -->
+
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/title_bg" >
+
+        <ImageButton
+            android:id="@+id/imBack"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_btn_selector" />
+    </RelativeLayout>
+
+    <!-- 信号栏E -->
+    <!-- 标题 S -->
+
+    <!-- 订单信息布局 -->
+   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="32dip" >
+
+        <TextView
+            android:id="@+id/successText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="短信下发成功！"
+            android:textColor="#D96B21"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <!-- 标题E -->
+    <!-- 中间 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_paysuccess_order_info"
+            android:layout_width="fill_parent"
+            android:layout_height="240dip"
+            android:background="@drawable/baisebeijing"
+            >
+
+            <ListView
+                android:layout_margin="12dip"
+                android:id="@+id/list_paysuccess_orderinfo_details"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:animationCache="true"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:dividerHeight="1.0000dp"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="true"
+                android:scrollbars="none" 
+                android:listSelector="@android:color/transparent"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="11dip"
+            android:layout_marginRight="11dip"
+            android:layout_marginTop="20dip"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:text="温馨提示:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+<TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="11dip"
+            android:layout_marginRight="11dip"
+            android:layout_marginTop="20dip"
+            android:gravity="left|center_vertical"
+            android:text="扣费确认：请按收到的手机支付扣费短信提示进行操作，支付成功后将收到电影兑换票凭证。"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="11dip"
+            android:layout_marginRight="11dip"
+            android:layout_marginTop="10dip"
+            android:gravity="left|center_vertical"
+            android:lineSpacingExtra="3dip"
+            android:text="现场兑票方式:购买成功后,您将收到手机短信,到了影院请出示“手机短信内容+订票手机号码“,验证能过后再换票观影。"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

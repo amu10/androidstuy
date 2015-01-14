@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 页面TabHost -->
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/lvMainTabHost"
+                android:layout_marginBottom="-10dip" >
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/lvMainTabHost"
+                android:layout_width="fill_parent"
+                android:layout_height="57dip"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rvTabMovie"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                     >
+
+                    <ImageView
+                        android:id="@+id/ivMovie"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/zsq_tab_movie"
+                        android:src="@drawable/zsq_tab_movie_b"
+                        android:scaleType="fitXY"
+                        />
+
+<!--                     <ImageView -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="fill_parent" -->
+<!--                         android:layout_alignParentRight="true" -->
+<!--                         android:scaleType="centerInside" -->
+<!--                         android:src="@drawable/zsq_tab_line" /> -->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rvTabCinema"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                   >
+
+                    <ImageView
+                        android:id="@+id/ivCinema"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/zsq_tab_cinema" />
+
+<!--                     <ImageView -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="fill_parent" -->
+<!--                         android:layout_alignParentRight="true" -->
+<!--                         android:scaleType="centerInside" -->
+<!--                         android:src="@drawable/zsq_tab_line" /> -->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rvTabPreferential"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivPreferential"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/zsq_tab_preferential" />
+
+<!--                     <ImageView -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="fill_parent" -->
+<!--                         android:layout_alignParentRight="true" -->
+<!--                         android:scaleType="centerInside" -->
+<!--                         android:src="@drawable/zsq_tab_line" /> -->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rvTabCoupon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ivCoupon"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/zsq_tab_coupon" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rvTabMore"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                     >
+
+                    <ImageView
+                        android:id="@+id/ivMore"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/zsq_tab_more" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </TabHost>
+
+</RelativeLayout>

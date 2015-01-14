@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/movie_detail_imageView_pic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="#70000000"
+         />
+    <!-- android:scaleType="fitXY" -->
+    <!-- 中间 -->
+
+    <ListView
+        android:id="@+id/movie_detail_listView_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dip"
+        android:layout_marginTop="36dip"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false" />
+
+    <!-- 购票 -->
+
+    <RelativeLayout
+        android:id="@+id/buyLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/no_buy_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/bar"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/no_detail_textView_moviename"
+                android:layout_width="230dip"
+                android:layout_height="45dip"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:paddingRight="25dip"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/buy_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_marginBottom="5dip"
+            android:orientation="horizontal" 
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/detail_textView_moviename"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingRight="25dip"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#000000"
+                android:background="@drawable/movie_name_bottom"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/goupiao"
+                android:layout_width="70dip"
+                android:layout_height="45dip"
+                android:paddingLeft="10dip"
+                android:gravity="center"
+                android:text="购票"
+                android:background="@drawable/buy_ticket_xiangqing_btn"
+                android:textColor="#010101"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/no_comment" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="100dip" -->
+    <!-- android:layout_above="@id/buyLinearLayout" -->
+    <!-- android:layout_marginTop="10dip" -->
+    <!-- android:background="@drawable/currbg" -->
+    <!-- android:layout_marginBottom="10dip" -->
+    <!-- android:layout_marginLeft="15dip" -->
+    <!-- android:layout_marginRight="15dip" -->
+    <!-- android:gravity="center" -->
+    <!-- android:visibility="gone" -->
+    <!-- > -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:textSize="12sp" -->
+    <!-- android:textColor="#ffffff" -->
+    <!-- android:text="当前还没有评论，赶紧抢沙发把！" > -->
+    <!-- </TextView> -->
+    <!-- </LinearLayout> -->
+    <!-- 信号栏s -->
+
+   <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:background="@drawable/title_bg" />
+
+        <com.szcmcc.movie.view.BackImageLinear
+            android:layout_width="39dip"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.BackImageView
+                android:id="@+id/back"
+                android:layout_width="39dip"
+                android:layout_height="28dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/back_btn_selector"
+                android:scaleType="center" />
+        </com.szcmcc.movie.view.BackImageLinear>
+
+        <!-- <TextView -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1.0" -->
+        <!-- android:text="" /> -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.HomeImageLayout
+                android:id="@+id/homeLayout"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|right"
+                android:paddingBottom="5dip"
+                android:scaleType="center" >
+
+                <com.szcmcc.movie.view.HomeImageView
+                    android:id="@+id/home"
+                    android:layout_width="30dip"
+                    android:layout_height="24dip"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginTop="1dip"
+                    android:background="@drawable/home_btn_selector"
+                    android:scaleType="center" />
+            </com.szcmcc.movie.view.HomeImageLayout>
+
+            <com.szcmcc.movie.view.TimeTextView
+                android:id="@+id/currentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="23dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="7dip"
+                android:gravity="center"
+                android:text="12:34"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.szcmcc.movie.view.NetImageView
+                android:id="@+id/net"
+                android:layout_width="30dip"
+                android:layout_height="24dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="1dip"
+                android:layout_marginRight="5dip"
+                android:scaleType="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 信号栏E -->
+
+
+    <!-- 更多影片S -->
+
+    <ImageView
+        android:id="@+id/pinglun_top"
+        android:layout_width="51dip"
+        android:layout_height="26dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dip"
+        android:background="@drawable/pinglun_click"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/more_relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="true" >
+
+        <ListView
+            android:id="@+id/more_listview"
+            android:layout_width="90dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/black"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:listSelector="@drawable/listview_item_selector"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/listview_menu" -->
+        <!-- android:layout_width="18dip" -->
+        <!-- android:layout_height="75dip" -->
+        <!-- android:layout_alignWithParentIfMissing="true" -->
+        <!-- android:layout_marginTop="50dip" -->
+        <!-- android:layout_toLeftOf="@id/more_listview" -->
+        <!-- android:background="@drawable/more_film" -->
+        <!-- android:scaleType="center" /> -->
+
+        <LinearLayout
+            android:id="@+id/listview_menuLayout"
+            android:layout_width="50dip"
+            android:layout_height="108dip"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginTop="50dip"
+            android:layout_toLeftOf="@id/more_listview"
+            android:gravity="right"
+            android:scaleType="center" >
+
+            <ImageView
+                android:id="@+id/listview_menu"
+                android:layout_width="32dip"
+                android:layout_height="108dip"
+                android:background="@drawable/more_film" />
+        </LinearLayout>
+
+       
+    </RelativeLayout>
+    <!-- 更多影片E -->
+<RelativeLayout
+        android:id="@+id/noHot_movie_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="true" >
+         <ListView
+            android:id="@+id/noHot_listview"
+            android:layout_width="90dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/black"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/noHot_listview_menuLayout"
+            android:layout_width="50dip"
+            android:layout_height="108dip"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginTop="158dip"
+            android:layout_toLeftOf="@id/noHot_listview"
+            android:gravity="right"
+            android:scaleType="center" >
+
+            <ImageView
+                android:id="@+id/imageView_noHot"
+                android:layout_width="32dip"
+                android:layout_height="108dip"
+                android:background="@drawable/coming_film" />'
+                 </LinearLayout>
+        </RelativeLayout>
+</RelativeLayout>

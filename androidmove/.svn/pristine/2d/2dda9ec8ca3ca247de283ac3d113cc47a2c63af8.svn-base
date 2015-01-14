@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" >
+
+        
+        <ImageView android:layout_width="fill_parent" android:layout_height="25dip"
+            android:src="@drawable/black" android:scaleType="fitXY"
+            android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+            android:layout_alignParentBottom="true"/>
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/write_pinlun" />
+    </RelativeLayout>
+
+</LinearLayout>

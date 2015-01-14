@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 座位票 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgeUrl"
+            android:layout_width="65dip"
+            android:layout_height="95dip"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:layout_marginLeft="10dip"
+                    android:singleLine="true"
+                    android:text="龙门飞甲"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/play_zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                      android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dip"
+                    android:gravity="center"
+                    android:text="正在热映"
+                    android:textColor="#2481b0"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/play_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dip"
+                    android:gravity="center"
+                    android:text="即将上映"
+                    android:textColor="#ff5407"
+                    android:textSize="11sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/play_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                      android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dip"
+                    android:gravity="center"
+                    android:text="已下线"
+                    android:textColor="#a7a7a7"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:singleLine="true"
+                    android:text="上映日期 :  "
+                    android:layout_marginLeft="10dip"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#545454"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/playtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:singleLine="true"
+                    android:layout_marginLeft="5dip"
+                    android:text="2012-3-1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#545454"
+                    android:textSize="12sp"
+                     />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+  
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_gravity="center"
+        android:background="#C8C8C8" />
+
+</LinearLayout>

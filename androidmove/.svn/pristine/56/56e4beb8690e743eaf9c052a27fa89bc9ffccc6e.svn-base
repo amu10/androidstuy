@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+<ImageView android:id="@+id/bgImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY"/>
+    <!-- 中间S -->
+ 	<ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="30dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/c_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@drawable/imagephoto"
+                android:scaleType="centerCrop" />
+
+            <ProgressBar
+                android:id="@+id/loading_progress"
+                style="@android:style/Widget.ProgressBar.Large"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <!-- 图册S -->
+        <!-- <LinearLayout android:orientation="vertical" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="fill_parent"> -->
+
+
+        <!-- <com.szcmcc.movie.view.GalleryFlow1 -->
+        <!-- android:id="@+id/gallery" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="fill_parent" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_weight="1" /> -->
+
+
+        <!-- <RelativeLayout -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:scaleType="centerCrop" > -->
+        <!-- <ImageView -->
+        <!-- android:id="@+id/imageView" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:scaleType="centerCrop" /> -->
+
+
+        <!-- <com.szcmcc.movie.view.LoadingImagView -->
+        <!-- android:id="@+id/moviepic_loading_viewpager_progress" -->
+        <!-- android:layout_width="170dip" -->
+        <!-- android:layout_height="190dip" -->
+        <!-- android:layout_marginTop="50dip" -->
+        <!-- android:layout_centerHorizontal="true" -->
+        <!-- android:visibility="gone" /> -->
+        <!-- </RelativeLayout> -->
+
+
+        <!-- </LinearLayout> -->
+
+       
+
+                <!-- 图册E -->
+
+
+                <!-- 地址S -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="16dip"
+                    android:layout_marginTop="15dip"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="29dip"
+                        android:layout_height="29dip"
+                        android:layout_gravity="top"
+                        android:background="@drawable/weizhi"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="7dip"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/gomap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawable="@drawable/duigou_right"
+                            android:gravity="left|center_vertical"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                        <!-- <TextView -->
+                        <!-- android:id="@+id/movies_jiantou" -->
+                        <!-- android:layout_width="23dip" -->
+                        <!-- android:layout_height="23dip" -->
+                        <!-- android:layout_gravity="center" -->
+                        <!-- android:ellipsize="end" -->
+                        <!-- android:gravity="center" -->
+                        <!-- android:singleLine="true" -->
+                        <!-- android:text=">" -->
+                        <!-- android:textAppearance="?android:attr/textAppearanceMedium" -->
+                        <!-- android:textColor="#E5600F" -->
+                        <!-- android:textSize="16sp" /> -->
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 地址E -->
+
+
+                <!-- 电话S -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="16dip"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="29dip"
+                        android:layout_height="29dip"
+                        android:layout_gravity="top"
+                        android:background="@drawable/dianhua"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="7dip"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:gravity="left|center_vertical"
+                            android:text="电话: "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/gophone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:gravity="left|center_vertical"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#C25611"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 电话E -->
+
+
+                <!-- 营业时间S -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="16dip"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="29dip"
+                        android:layout_height="29dip"
+                        android:layout_gravity="top"
+                        android:background="@drawable/shijian"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="7dip"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:gravity="left|center_vertical"
+                            android:text="营业时间: "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/opentime"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:gravity="left|center_vertical"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 营业时间E -->
+
+
+                <!-- 行车路线S -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dip"
+                    android:layout_marginRight="16dip"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="29dip"
+                        android:layout_height="29dip"
+                        android:layout_gravity="top"
+                        android:background="@drawable/che"
+                        android:scaleType="center" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="7dip"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/traffic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dip"
+                            android:gravity="left|center_vertical"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 行车路线E -->
+            </LinearLayout>
+    </LinearLayout>
+        </ScrollView>
+    <!-- 查看排期S -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="75dip" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:layout_marginBottom="10dip" -->
+    <!-- android:id="@+id/wenzibg" -->
+    <!-- android:background="@drawable/wenzi_bg2" > -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:id="@+id/paiqil" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:layout_marginBottom="5dip" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1.0" -->
+    <!-- android:text="" -->
+    <!-- /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/c_name" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_gravity="center_vertical" -->
+    <!-- android:layout_marginRight="60dip" -->
+    <!-- android:text="" -->
+    <!-- android:textColor="#000000" -->
+    <!-- android:paddingTop="5dip" -->
+    <!-- android:textSize="18sp" -->
+    <!-- android:textStyle="bold" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/paiqi" -->
+    <!-- android:layout_width="70dip" -->
+    <!-- android:layout_height="50dip" -->
+    <!-- android:layout_gravity="right|center_vertical" -->
+    <!-- android:layout_marginRight="10dip" -->
+    <!-- android:gravity="bottom" -->
+    <!-- android:paddingBottom="10dip" -->
+    <!-- android:text="查看排期" -->
+    <!-- android:textColor="#010101" -->
+    <!-- android:textSize="16sp" -->
+    <!-- android:textStyle="bold" /> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="75dip" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:layout_marginBottom="5dip" -->
+    <!-- android:gravity="right|top" -->
+    <!-- android:background="@drawable/wenzi_bg" > -->
+    <!-- <TextView -->
+    <!-- android:id="@+id/paiqiButton" -->
+    <!-- android:layout_width="80dip" -->
+    <!-- android:layout_height="60dip" -->
+    <!-- /> -->
+    <!-- </LinearLayout> -->
+
+
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/paiqil" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="40dip" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:layout_gravity="right" -->
+    <!-- android:layout_marginBottom="20dip" -->
+    <!-- android:orientation="horizontal" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_weight="1.0" -->
+    <!-- android:text="" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/c_name" -->
+    <!-- android:layout_width="230dip" -->
+    <!-- android:layout_height="30dip" -->
+    <!-- android:ellipsize="end" -->
+    <!-- android:gravity="center" -->
+    <!-- android:singleLine="true" -->
+    <!-- android:text="" -->
+    <!-- android:textColor="#010101" -->
+    <!-- android:textSize="20sp" -->
+    <!-- android:textStyle="bold" /> -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/paiqi" -->
+    <!-- android:layout_width="80dip" -->
+    <!-- android:layout_height="40dip" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:layout_marginBottom="2dip" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="查看排期" -->
+    <!-- android:textColor="#010101" -->
+    <!-- android:textSize="15sp" /> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- 查看排期S -->
+    <!-- 中间 E -->
+
+
+    <!-- 信号栏s -->
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:background="@drawable/title_bg" />
+
+        <com.szcmcc.movie.view.BackImageLinear
+            android:layout_width="39dip"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.BackImageView
+                android:id="@+id/back"
+                android:layout_width="39dip"
+                android:layout_height="28dip"
+                
+                android:layout_centerInParent="true"
+                android:background="@drawable/back_btn_selector"
+                android:scaleType="center" />
+        </com.szcmcc.movie.view.BackImageLinear>
+
+  
+    </RelativeLayout>
+
+    <!-- 信号栏E -->
+
+</RelativeLayout>

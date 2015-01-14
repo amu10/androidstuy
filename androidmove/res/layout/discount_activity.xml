@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/default_bg"
+    android:orientation="vertical" >
+
+    <!-- 信号栏s -->
+
+    <RelativeLayout
+        android:id="@+id/homepage_layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="53dip"
+            android:layout_alignParentLeft="true" >
+
+            <LinearLayout
+                android:id="@+id/homepage_moiveLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" >
+
+                <TextView
+                    android:id="@+id/homepage_textView_moviefast"
+                    android:layout_width="53dip"
+                    android:layout_height="51dip"
+                    android:background="@drawable/movie_news_btn"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/mid"
+                android:layout_width="13dip"
+                android:layout_height="51dip"
+                android:layout_toRightOf="@id/homepage_moiveLayout"
+                android:background="@drawable/main_header_middle_right2" />
+
+            <LinearLayout
+                android:id="@+id/homepage_nearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/mid" >
+
+                <TextView
+                    android:id="@+id/homepage_textView_nearmovie"
+                    android:layout_width="53dip"
+                    android:layout_height="51dip"
+                    android:background="@drawable/nearby_cinema_btn" />
+            </LinearLayout>
+
+            
+            <TextView
+                android:id="@+id/mid2"
+                android:layout_width="13dip"
+                android:layout_height="51dip"
+                android:layout_toRightOf="@id/homepage_nearLayout"
+                android:background="@drawable/main_header_middle_right1" />
+
+            <LinearLayout
+                android:id="@+id/homepage_youhui"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/mid2" >
+
+                <TextView
+                    android:id="@+id/homepage_textView_youhui"
+                    android:layout_width="53dip"
+                    android:layout_height="51dip"
+                    android:background="@drawable/new_youhui_btn_select" />
+            </LinearLayout>
+            
+            
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="51dip"
+                android:layout_toRightOf="@id/homepage_youhui"
+                android:background="@drawable/mainheader_tail" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.SettingImageLayout
+                android:id="@+id/settingLayout"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:gravity="center_vertical|right"
+                android:scaleType="center" >
+
+                <com.szcmcc.movie.view.SettingImageView
+                    android:id="@+id/setting"
+                    android:layout_width="30dip"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dip"
+                    android:background="@drawable/setting"
+                    android:padding="10dip"
+                    android:scaleType="center" />
+            </com.szcmcc.movie.view.SettingImageLayout>
+
+            <com.szcmcc.movie.view.TimeTextView
+                android:id="@+id/currentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="23dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="7dip"
+                android:gravity="center"
+                android:text="12:34"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.szcmcc.movie.view.NetImageView
+                android:id="@+id/net"
+                android:layout_width="30dip"
+                android:layout_height="24dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dip"
+                android:scaleType="center" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 信号栏E -->
+
+    <ListView
+        android:id="@+id/discount_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/homepage_layout_top"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:scrollbars="none" />
+
+  <TextView
+        android:id="@+id/noYouhuiText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="暂无优惠活动！"
+        android:visibility="gone" >
+    </TextView>
+</RelativeLayout>

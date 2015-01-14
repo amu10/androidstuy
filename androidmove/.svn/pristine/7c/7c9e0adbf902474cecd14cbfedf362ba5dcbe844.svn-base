@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/default_bg" >
+
+    <!-- 中间 -->
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="100dip"
+        android:layout_marginTop="37dip"
+        android:orientation="vertical" >
+
+        <!-- 一行S -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:background="@drawable/name_bg"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cinemaname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dip"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="" />
+        </LinearLayout>
+        <!-- 一行E -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 三行S -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dip"
+                android:layout_marginTop="15dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/yingyuanxiangqing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp" />
+                <!-- <ImageView android:layout_width="58dip" android:id="@+id/duihuangquan" -->
+                <!-- android:background="#2578A2" android:layout_height="25dip" -->
+                <!-- android:layout_gravity="center_vertical" /> -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="" />
+            </LinearLayout>
+            <!-- 三行E -->
+
+
+            <!-- 四行S -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="26dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/moviedes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#E5600F"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/movies_jiantou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dip"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text=">"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#E5600F"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+                
+                    
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="" />
+            </LinearLayout>
+            <TextView android:id="@+id/buyDuihuan" android:layout_width="83dip" android:layout_height="30dip" android:background="@drawable/buyticket_coupon"
+                    android:text="购兑换券" android:textColor="#ffffff" android:paddingLeft="22dip" android:textSize="13sp"
+                    android:gravity="center_vertical" android:layout_marginLeft="10dip" android:layout_marginTop="15dip"
+                    android:visibility="gone" />
+            <!-- 四行E -->
+            <!-- 五行S -->
+
+            <LinearLayout
+                android:id="@+id/rateLinear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="15dip"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <RatingBar
+                    android:id="@+id/scorerate"
+                    style="@style/samllscoreRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="1dip"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="0" />
+
+                <TextView
+                    android:id="@+id/scoretext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="1dip"
+                    android:text="0.0"
+                    android:textColor="#DBB502"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/pinluntext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#B6B6B6"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="人评论"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#B6B6B6"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+            <!-- 五行E -->
+            <!-- 六行S -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="15dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/jian"
+                    android:layout_width="14dip"
+                    android:layout_height="22dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dip"
+                    android:scaleType="center"
+                    android:src="@drawable/zuojiantou"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/zhangshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="2dip"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/jia"
+                    android:layout_width="14dip"
+                    android:layout_height="22dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="3dip"
+                    android:scaleType="center"
+                    android:src="@drawable/youjiantou"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <!-- 六行E -->
+
+
+            <!-- 时间表S -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="16dip"
+                android:orientation="horizontal" >
+
+                <GridView
+                    android:id="@+id/time_grid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#ffffffff"
+                    android:fadingEdge="none"
+                    android:gravity="center"
+                    android:horizontalSpacing="2dip"
+                    android:listSelector="@drawable/grid_item_s"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="4dip" />
+            </LinearLayout>
+            <!-- 时间表E -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 更多影片S -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="true" >
+
+        <ListView
+            android:id="@+id/more_listview"
+            android:layout_width="90dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/black"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:footerDividersEnabled="false"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/listview_menu" -->
+        <!-- android:layout_width="30dip" -->
+        <!-- android:layout_height="90dip" -->
+        <!-- android:layout_alignWithParentIfMissing="true" -->
+        <!-- android:layout_marginTop="40dip" -->
+        <!-- android:layout_toLeftOf="@id/more_listview" -->
+        <!-- android:scaleType="center" -->
+        <!-- android:src="@drawable/more_film" /> -->
+    </RelativeLayout>
+    <!-- 更多影片E -->
+
+
+    <!-- 信号栏s -->
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/title_bg" />
+
+        <com.szcmcc.movie.view.BackImageLinear
+            android:layout_width="39dip"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.BackImageView
+                android:id="@+id/back"
+                android:layout_width="39dip"
+                android:layout_height="28dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/back_btn_selector"
+                android:scaleType="center" />
+        </com.szcmcc.movie.view.BackImageLinear>
+
+        <!-- <TextView -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1.0" -->
+        <!-- android:text="" /> -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.HomeImageLayout
+                android:id="@+id/homeLayout"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|right"
+                android:paddingBottom="5dip"
+                android:scaleType="center" >
+
+                <com.szcmcc.movie.view.HomeImageView
+                    android:id="@+id/home"
+                    android:layout_width="30dip"
+                    android:layout_height="24dip"
+                    android:layout_marginBottom="1dip"
+                    android:layout_marginTop="1dip"
+                    android:background="@drawable/home_btn_selector"
+                    android:scaleType="center" />
+            </com.szcmcc.movie.view.HomeImageLayout>
+
+            <com.szcmcc.movie.view.TimeTextView
+                android:id="@+id/currentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="23dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="7dip"
+                android:gravity="center"
+                android:text="12:34"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.szcmcc.movie.view.NetImageView
+                android:id="@+id/net"
+                android:layout_width="30dip"
+                android:layout_height="24dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="1dip"
+                android:layout_marginRight="5dip"
+                android:scaleType="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 信号栏E -->
+    <!-- 顶部E -->
+
+</RelativeLayout>

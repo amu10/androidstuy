@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zsq_main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/title_bg" >
+
+        <ImageButton
+            android:id="@+id/imBack"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_btn_selector" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/white16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dip"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:singleLine="true" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 中间 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 功能设置 S -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip" >
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="fill_parent"
+                        android:layout_height="190dip"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/imagephoto" />
+
+                    <ProgressBar
+                        android:id="@+id/loading_progress"
+                        style="@android:style/Widget.ProgressBar.Large"
+                        android:layout_width="50dip"
+                        android:layout_height="50dip"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="14dip"
+                android:layout_marginRight="14dip"
+                android:layout_marginTop="5dip"
+                android:orientation="vertical" >
+
+                <!-- 一行S -->
+
+<!--                 <LinearLayout -->
+<!--                     android:layout_width="fill_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_gravity="center_horizontal" -->
+<!--                     android:layout_marginTop="10dip" -->
+<!--                     android:orientation="horizontal" > -->
+
+<!--                     <TextView -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="center_vertical" -->
+<!--                         android:gravity="center" -->
+<!--                         android:text="活动时间:" -->
+<!--                         android:textAppearance="?android:attr/textAppearanceMedium" -->
+<!--                         android:textColor="#FFFFFF" -->
+<!--                         android:textSize="13sp" /> -->
+
+<!--                     <TextView -->
+<!--                         android:id="@+id/date" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="center_vertical" -->
+<!--                         android:layout_marginLeft="5dip" -->
+<!--                         android:gravity="center" -->
+<!--                         android:textAppearance="?android:attr/textAppearanceMedium" -->
+<!--                         android:textColor="#FFFFFF" -->
+<!--                         android:textSize="13sp" /> -->
+<!--                 </LinearLayout> -->
+                
+                <!-- 一行E -->
+
+<WebView android:id="@+id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#00000000" ></WebView>
+
+<!--                 二 行S -->
+
+<!--                 <LinearLayout -->
+<!--                     android:layout_width="fill_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_gravity="center_horizontal" -->
+<!--                     android:layout_marginTop="10dip" -->
+<!--                     android:orientation="horizontal" > -->
+
+<!--                     <TextView -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="center_vertical" -->
+<!--                         android:gravity="center" -->
+<!--                         android:text="活动地点:" -->
+<!--                         android:textAppearance="?android:attr/textAppearanceMedium" -->
+<!--                         android:textColor="#FFFFFF" -->
+<!--                         android:textSize="13sp" /> -->
+
+<!--                     <TextView -->
+<!--                         android:id="@+id/address" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="center_vertical" -->
+<!--                         android:layout_marginLeft="5dip" -->
+<!--                         android:gravity="center" -->
+<!--                         android:textAppearance="?android:attr/textAppearanceMedium" -->
+<!--                         android:textColor="#FFFFFF" -->
+<!--                         android:textSize="13sp" /> -->
+<!--                 </LinearLayout> -->
+<!--                 二 行E -->
+
+
+<!--                 三行S -->
+
+<!--                 <LinearLayout -->
+<!--                     android:layout_width="fill_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_gravity="center_horizontal" -->
+<!--                     android:layout_marginTop="10dip" -->
+<!--                     android:orientation="horizontal" > -->
+
+<!--                     <TextView -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="center_vertical" -->
+<!--                         android:gravity="center" -->
+<!--                         android:text="活动内容:" -->
+<!--                         android:textAppearance="?android:attr/textAppearanceMedium" -->
+<!--                         android:textColor="#FFFFFF" -->
+<!--                         android:textSize="13sp" /> -->
+
+<!--                     <TextView -->
+<!--                         android:id="@+id/context" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="center_vertical" -->
+<!--                         android:layout_marginLeft="5dip" -->
+<!--                         android:gravity="center" -->
+<!--                         android:textAppearance="?android:attr/textAppearanceMedium" -->
+<!--                         android:textColor="#FFFFFF" -->
+<!--                         android:textSize="13sp" /> -->
+<!--                 </LinearLayout> -->
+<!--                 三 行E -->
+
+
+<!--                 四行S -->
+
+<!--                 <LinearLayout -->
+<!--                     android:layout_width="fill_parent" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_gravity="center_horizontal" -->
+<!--                     android:layout_marginTop="10dip" -->
+<!--                     android:orientation="horizontal" > -->
+
+<!--                     <TextView android:layout_width="wrap_content" -->
+<!--                     android:layout_gravity="center_vertical" android:textAppearance="?android:attr/textAppearanceMedium" -->
+<!--                     android:textColor="#FFFFFF" android:textSize="16sp" -->
+<!--                     android:layout_height="wrap_content" android:gravity="center" -->
+<!--                     android:text="活动内容:" /> -->
+
+<!--                     <TextView -->
+<!--                         android:id="@+id/des" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:layout_gravity="left" -->
+<!--                         android:gravity="left" -->
+<!--                         android:lineSpacingExtra="1dip" -->
+<!--                         android:textAppearance="?android:attr/textAppearanceMedium" -->
+<!--                         android:textColor="#FFFFFF" -->
+<!--                         android:textSize="13sp" /> -->
+<!--                 </LinearLayout> -->
+<!--                 四 行E -->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

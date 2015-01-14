@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/show_more"
+    android:layout_width="fill_parent"
+    android:layout_height="70dip"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="显示更多"
+    android:background="@drawable/noon_slectedbg"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textSize="15sp"
+    android:textStyle="bold" />

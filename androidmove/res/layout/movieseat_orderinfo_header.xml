@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- 功能设置 S -->
+
+        <LinearLayout
+            android:id="@+id/movieSeat_order_layout_header"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dip"
+            android:orientation="vertical"
+             >
+
+            <!-- 一行S -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="手机号码:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#797776"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/movieSeatinfo_order_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical|left"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!-- 一行E -->
+
+
+            <!-- 二行S -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="电影名称:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#797776"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/movieSeat_order_moviename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical|left"
+                    android:text="金陵十三钗(数国)"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!-- 二行E -->
+
+
+            <!-- 放映时间S -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical|left"
+                    android:text="放映时间:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#797776"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/movieSeatInfo_order_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="2012-03-04"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!-- 放映时间E -->
+            <!-- 三行S -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center"
+                    android:text="影院名称:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#797776"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/movieSeatinfo_order_cinemaname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="center_vertical|left"
+                    android:text="百老汇影院  8号厅"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+           
+    </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip"
+        android:paddingTop="8dip" >
+
+        <ImageView
+            android:id="@+id/ivTime"
+            android:layout_width="16dip"
+            android:layout_height="16dip"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_time" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            style="@style/zsq_white12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dip"
+            android:layout_toRightOf="@+id/ivTime" />
+
+        <LinearLayout
+            android:layout_width="120dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/blue_pane_bg"
+            android:orientation="horizontal"
+            android:padding="4dip" >
+
+            <TextView
+                android:id="@+id/tvChina"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="#44a0ce"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="内地票房"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvUSA"
+                style="@style/zsq_white12"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="北美票房" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

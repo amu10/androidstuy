@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/rvLeft"
+            android:layout_width="84dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/listbg" >
+
+            <ImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="80dip"
+                android:layout_height="56dip"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ivArrow"
+            android:layout_toRightOf="@+id/rvLeft"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingTop="4dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/white16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+<!--             <TextView -->
+<!--                 android:id="@+id/tvAddress" -->
+<!--                 style="@style/light_gray14" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginTop="6dip" -->
+<!--                 android:ellipsize="end" -->
+<!--                 android:singleLine="true" /> -->
+
+            <com.szcmcc.movie.view.MarqueeTextView
+                android:id="@+id/tvTime"
+                style="@style/light_gray14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:ellipsize="end"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:layout_width="8dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/whitejiantou" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/zsq_xy_line" />
+
+</LinearLayout>

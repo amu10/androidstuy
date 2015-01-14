@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/white14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="6dip"
+        android:text="福田区" />
+
+    <ImageView
+        android:id="@+id/ivBlueLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvName"
+        android:layout_alignRight="@+id/tvName"
+        android:layout_below="@+id/tvName"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/zsq_blue_line" />
+
+</RelativeLayout>

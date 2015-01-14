@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="70dip"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/quyuName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="福田区"
+            android:textColor="#1F88C1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/quyuNameLine"
+            android:layout_width="45dip"
+            android:layout_height="1dip"
+            android:layout_marginTop="3dip"
+            android:background="#1F88C1" />
+    </LinearLayout>
+
+</LinearLayout>

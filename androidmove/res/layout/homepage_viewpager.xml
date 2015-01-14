@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/homepage_viewpager_imag"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter" />
+
+    <com.szcmcc.movie.view.LoadingImagView
+        android:id="@+id/homepager_loading_viewpager_progress"
+        android:layout_width="170dip"
+        android:layout_height="190dip"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

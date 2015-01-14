@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="75dip"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="73dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            android:id="@+id/tvTypeName"
+            style="@style/light_gray12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip" />
+
+        <TextView
+            android:id="@+id/tvVerifyCode"
+            style="@style/dark_gray14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvTypeName" />
+
+        <TextView
+            android:id="@+id/tvTime1"
+            style="@style/light_gray12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTypeName"
+            android:text="有限期限：" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            style="@style/blue12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvTime1"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/tvTime2"
+            style="@style/dark_gray14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTypeName"
+            android:layout_toRightOf="@+id/tvTime1" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_gravity="center"
+        android:background="#C8C8C8" />
+
+</LinearLayout>

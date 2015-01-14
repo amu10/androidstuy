@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/bigimage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+         />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#b1000000"
+         />
+    
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <!-- 中间 S -->
+
+
+        <!-- <ImageSwitcher -->
+        <!-- android:id="@+id/browsecar_switch_switcher" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="fill_parent" -->
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- android:layout_alignParentTop="true" /> -->
+
+        <com.itotem.view.touchimageview.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+           />
+        <!-- 中间 E -->
+    </RelativeLayout>
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/bigimage" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:layout_centerInParent="true" -->
+    <!-- android:scaleType="centerCrop" -->
+    <!-- android:src="@drawable/main" /> -->
+
+
+    <!-- 底部S -->
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="25dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/downtitle_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/pic_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="23dip"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dip"
+            android:layout_marginTop="2dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="9"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="|"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/pic_total_text"
+            android:layout_width="wrap_content"
+            android:layout_height="23dip"
+            android:layout_gravity="center"
+            android:layout_marginRight="6dip"
+            android:layout_marginTop="2dip"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="18"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </LinearLayout>
+    <!-- 底部E -->
+    <!-- 顶部 S -->
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+         
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="36dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/title_bg" />
+
+        <com.szcmcc.movie.view.BackImageLinear
+            android:layout_width="39dip"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <com.szcmcc.movie.view.BackImageView
+                android:id="@+id/back"
+                android:layout_width="39dip"
+                android:layout_height="28dip"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/back_btn_selector"
+                android:scaleType="center" />
+        </com.szcmcc.movie.view.BackImageLinear>
+    </RelativeLayout>
+
+   
+    <!-- 顶部 E -->
+
+</RelativeLayout>

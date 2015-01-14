@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/above_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/above_fir"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="博纳国际影院"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <!-- zhangsiqi -->
+            <LinearLayout
+                android:id="@+id/lvSuppCouponName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_vertical|left"
+                android:layout_weight="1"
+                android:visibility="invisible" >
+            </LinearLayout>
+            <!-- zhangsiqi -->
+            <!-- 座位票 -->
+
+            <LinearLayout
+                android:id="@+id/seat_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="影院排期"
+                    android:textColor="#FF1E97D2"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/childview_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/arrow_list_down" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="2dip"
+            android:background="@drawable/buyticket_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bloew_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

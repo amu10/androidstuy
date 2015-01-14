@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 表头S -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<TextView android:layout_width="23dip" android:textSize="16sp"
+		android:textColor="#6A6862" android:textStyle="bold"
+		android:ellipsize="end" android:singleLine="true"
+		android:layout_gravity="center_vertical" android:layout_height="23dip"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center" android:text="1" />
+	<ImageView android:layout_width="20dip" android:background="#308AB9"
+		android:layout_margin="3dip" android:layout_height="20dip"
+		android:layout_gravity="center_vertical" />
+	<ImageView android:layout_width="20dip" android:background="#308AB9"
+		android:layout_margin="3dip" android:layout_height="20dip"
+		android:layout_gravity="center_vertical" />
+	<RelativeLayout android:orientation="horizontal"
+		android:layout_weight="1.0" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<!-- 动态添加座位 -->
+		<LinearLayout android:orientation="horizontal"
+			android:id="@+id/seat_row_pl" android:layout_centerHorizontal="true"
+			android:layout_width="wrap_content" android:background="#FFFFFF"
+			android:layout_height="fill_parent">
+			<ImageView android:layout_width="20dip" android:background="#308AB9"
+				android:layout_margin="3dip" android:layout_height="20dip"
+				android:layout_gravity="center_vertical" />
+			<ImageView android:layout_width="20dip" android:background="#308AB9"
+				android:layout_margin="3dip" android:layout_height="20dip"
+				android:layout_gravity="center_vertical" />
+			<ImageView android:layout_width="20dip" android:background="#308AB9"
+				android:layout_margin="3dip" android:layout_height="20dip"
+				android:layout_gravity="center_vertical" />
+		</LinearLayout>
+	</RelativeLayout>
+	<ImageView android:layout_width="20dip" android:background="#308AB9"
+		android:layout_margin="3dip" android:layout_height="20dip"
+		android:layout_gravity="center_vertical" />
+	<ImageView android:layout_width="20dip" android:background="#308AB9"
+		android:layout_margin="3dip" android:layout_height="20dip"
+		android:layout_gravity="center_vertical" />
+	<TextView android:layout_width="23dip" android:textSize="16sp"
+		android:textColor="#6A6862" android:textStyle="bold"
+		android:ellipsize="end" android:singleLine="true"
+		android:layout_gravity="center_vertical" android:layout_height="23dip"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:gravity="center" android:text="1" />
+</LinearLayout>
+<!-- 表头E -->

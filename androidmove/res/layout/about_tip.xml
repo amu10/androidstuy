@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zsq_main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rvTop"
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/title_bg" >
+
+        <ImageButton
+            android:id="@+id/imBack"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_btn_selector" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="8dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25dip"
+                android:gravity="center"
+                android:text="温馨提示"
+                android:textSize="16sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip"
+                android:text="1、本客户端通过中国移动的WLAN、  TD、  EDGE、  GPRS网络浏览。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="2、使用本客户端将产生GPRS流量费；手机观看视频流量较大，请谨慎选择观看，如有需要请办理GPRS套餐。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="3、观看视频时，需要将网络接入点设置为CMNET，  绝大部分手机内置播放器可播放视频。如无法观看，  可根据手机类型下载播放器，下载地址在交通频道交通千里眼栏目内。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" >
+            </TextView>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="4、关于影片信息、排期及订票，以院线的最终公告和实际安排为准，敬请留意院线公告及时登录院线网站或拨打影院服务热线查询相关信息，我司不承担观影服务的相关法律责任。中国移动有权保留在法律范围内的解释权。"
+                android:textColor="#ffffff"
+                android:textSize="12sp" >
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

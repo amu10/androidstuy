@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zsq_main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/title_bg" >
+
+        <ImageButton
+            android:id="@+id/imBack"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_btn_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dip"
+        android:orientation="horizontal"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/ivStills"
+                android:layout_width="126dip"
+                android:layout_height="170dip"
+                android:layout_centerInParent="true"
+                android:background="#000000"
+                android:src="@drawable/zsq_default_icon_play_info"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/ivPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/play_start"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="vertical" >
+
+            <com.szcmcc.movie.view.MarqueeTextView
+                android:id="@+id/tvMovieName"
+                style="@style/white20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dip"
+                android:ellipsize="end"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="25dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RatingBar
+                    android:id="@+id/rBar"
+                    style="@style/rateMovieRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="0.5" />
+
+                <TextView
+                    android:id="@+id/tvScore"
+                    style="@style/yellow16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="6dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/saveBtn"
+                    android:layout_width="70dip"
+                    android:layout_height="32dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/shoucang_selector" />
+
+                <ImageView
+                    android:id="@+id/shareBtn"
+                    android:layout_width="70dip"
+                    android:layout_height="32dip"
+                    android:layout_marginLeft="8dip"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/zsq_btn_share" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="86dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/light_gray12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="导演：" />
+
+                        <TextView
+                            android:id="@+id/tvDirector"
+                            style="@style/white12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/light_gray12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="主演：" />
+
+                        <TextView
+                            android:id="@+id/tvStarring"
+                            style="@style/white12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+        					android:maxLines="2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/light_gray12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="类型：" />
+
+                        <TextView
+                            android:id="@+id/tvMovieType"
+                            style="@style/white12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/light_gray12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="日期：" />
+
+                        <TextView
+                            android:id="@+id/tvMovieTime"
+                            style="@style/white12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal"
+        android:padding="0dip" >
+
+        <Button
+            android:id="@+id/btnPlot"
+            style="@style/blue14"
+            android:layout_width="fill_parent"
+            android:layout_height="32dip"
+            android:layout_weight="1"
+            android:background="@drawable/zsq_btn_pressed"
+            android:text="剧情介绍" />
+
+        <Button
+            android:id="@+id/btnStills"
+            style="@style/light_gray14"
+            android:layout_width="fill_parent"
+            android:layout_height="32dip"
+            android:layout_weight="1"
+            android:background="@drawable/zsq_btn_universal"
+            android:text="剧照" />
+
+        <Button
+            android:id="@+id/btnPeopleCritic"
+            style="@style/light_gray14"
+            android:layout_width="fill_parent"
+            android:layout_height="32dip"
+            android:layout_weight="1"
+            android:background="@drawable/zsq_btn_universal"
+            android:text="大众影评" />
+
+        <Button
+            android:id="@+id/btnProfessionalCritic"
+            style="@style/light_gray14"
+            android:layout_width="fill_parent"
+            android:layout_height="32dip"
+            android:layout_weight="1"
+            android:background="@drawable/zsq_btn_universal"
+            android:text="专业影评" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:id="@+id/svPlot"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+<!--             android:background="@color/transparent" -->
+<!-- android:cacheColorHint="@android:color/transparent" -->
+<!--             android:listSelector="@android:color/transparent"  -->
+            <TextView
+                android:id="@+id/tvInfo"
+                style="@style/white14"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:lineSpacingExtra="3dip"
+                android:paddingBottom="30dip"
+                android:paddingLeft="30dip"
+                android:paddingRight="30dip"
+                android:paddingTop="20dip" />
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/lvStills"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <GridView
+                android:id="@+id/gvStills"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dip"
+                android:cacheColorHint="@android:color/transparent"
+                android:focusable="false"
+                android:gravity="center"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:stretchMode="columnWidth" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lvPeopleCritic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvPeopleCriticNum"
+                    style="@style/light_gray14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共  条大众影评" />
+
+                <Button
+                    android:id="@+id/btnwrite"
+                    style="@style/white14"
+                    android:layout_width="80dip"
+                    android:layout_height="26dip"
+                    android:layout_marginLeft="8dip"
+                    android:background="@drawable/zsq_btn_orange"
+                    android:text="@string/write_review" />
+            </LinearLayout>
+
+            <com.itotem.view.pullrefresh.PullToRefreshListView
+                xmlns:ptr="http://schemas.android.com/apk/res/com.szcmcc.movie"
+                android:id="@+id/listPeopleCritic"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:paddingLeft="16dip"
+                android:paddingRight="16dip"
+                ptr:ptrMode="both" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lvProfessionalCritic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.itotem.view.pullrefresh.PullToRefreshListView
+                xmlns:ptr="http://schemas.android.com/apk/res/com.szcmcc.movie"
+                android:id="@+id/listProfessionalCritic"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:paddingLeft="16dip"
+                android:paddingRight="16dip"
+                ptr:ptrMode="both" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/movie_detail_buy"
+            android:layout_width="88dip"
+            android:layout_height="35dip"
+            android:layout_above="@+id/movie_detail_buy1"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/movie_detail_buy"
+            android:gravity="right|center_vertical"
+            android:paddingRight="3dip"
+            android:text="购座位票"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/movie_detail_buy1"
+            android:layout_width="88dip"
+            android:layout_height="15dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</LinearLayout>

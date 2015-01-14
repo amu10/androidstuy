@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zsq_main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rvTop"
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/title_bg" >
+
+        <ImageButton
+            android:id="@+id/imBack"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_btn_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="8dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="25dip"
+            android:gravity="center"
+            android:text="版本信息"
+            android:textSize="16sp" >
+        </TextView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:text="       深圳爱电影Android客户端在融合了WAP网站内容基础上，为Android手机用户量身打造了契合Android体验方式的电影信息浏览、评论和在线订票等功能。用户可随时随地查看最新电影资讯，发表影评，参与互动，更可以深圳移动特惠的价格在线电影选座购票，并享受影院现场一站式取票服务，为您打造更便捷、时尚的影视娱乐生活！"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/verson"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:text="版本号：V1.0.1"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="软件名称：深圳爱电影客户端"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="软件提供商：中国移动通信集团广东有限公司深圳分公司"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

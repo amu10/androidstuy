@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="2dip"
+    android:paddingRight="2dip"
+    android:paddingTop="6dip" >
+
+    <ImageView
+        android:id="@+id/ivStills"
+        android:layout_width="wrap_content"
+        android:layout_height="110dip"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="6dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/loadinglist"
+        android:scaleType="centerCrop"/>"
+
+</RelativeLayout>

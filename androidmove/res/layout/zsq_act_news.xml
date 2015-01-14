@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/zsq_main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:background="@drawable/title_bg" >
+
+        <ImageButton
+            android:id="@+id/imBack"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_btn_selector" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/text_white16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        style="@style/light_gray14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/zsq_new_line" />
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="250dip"
+        android:layout_height="150dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zsq_default_icon_info"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" >
+
+        <TextView
+            android:id="@+id/tvInfo"
+            style="@style/text_white14"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:lineSpacingExtra="3dip"
+            android:paddingBottom="20dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip" />
+    </ScrollView>
+
+</LinearLayout>

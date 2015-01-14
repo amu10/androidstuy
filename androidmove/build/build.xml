@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="ids" basedir=".">
+	<property environment="env"/>
+    <property file="build.properties" />
+    <tstamp>
+	<!--打包用的时间戳名称 -->
+    <format property="TODAY_CN"
+          pattern="yyyyMMddHHmm"
+          locale="zh,CN"/>
+    </tstamp>
+    
+    <!--判断当前的系统环境 -->
+	<condition property="tools_suffix" value=".exe" else="">  
+        <os family="windows" />  
+    </condition> 
+    
+    <condition property="build_name" value="local" else="jenkins">  
+        <os family="windows" />  
+    </condition> 
+    <property name="zip-app-name" value="${app.name}_android_${app.version}_${TODAY_CN}_${id}.apk" /> 
+    <property name="download-app-name" value="${app.name}_${id}.apk" />
+    
+    <!-- Tools -->  
+    <property name="aapt" value="${android.sdk.tools}/aapt${tools_suffix}" />  
+    <property name="zipalign" value="${android.tools}/zipalign${tools_suffix}" />  
+    <property name="jarsigner" value="${jdk.home}/bin/jarsigner${tools_suffix}" />  
+    <property name="aidl" value="${android.sdk.tools}/aidl${tools_suffix}" />  
+    <property name="adb" value="${android.tools}/adb${tools_suffix}" />  
+    <condition property="dx" value="${android.sdk.tools}/dx.bat" else="${android.sdk.tools}/dx">  
+        <os family="windows" />  
+    </condition>
+    <condition property="apk-builder" value="${android.tools}/apkbuilder.bat" else="${android.tools}/apkbuilder">  
+        <os family="windows" />  
+    </condition> 
+    
+    
+   	<path id="libs">
+        <fileset dir="${path.main}/libs">
+			<include name="*.jar" />
+        </fileset>
+        
+		<!-- 第三方.jar -->
+<!-- 	    <fileset dir="${path.library2}/libs">             -->
+<!-- 	        <include name="*.jar"/>         -->
+<!-- 	    </fileset> -->
+    </path>
+	
+
+    <target name="init">
+        <echo>start initing ... </echo>
+
+        <delete>
+            <fileset dir="${path.main}/gen"></fileset>
+        </delete>
+        <delete>
+            <fileset dir="${path.main}/bin"></fileset>
+        </delete>
+        <mkdir dir="${path.main}/gen" />
+        <mkdir dir="${path.main}/bin/classes" />
+
+        <echo>finish initing. </echo>
+    </target>
+    
+
+    <target name="main" depends="init">
+        <echo>step1-->生成R文件</echo>
+        <exec executable="${aapt}" failonerror="true">
+            <arg value="package" />
+            <arg value="-m" />
+            <arg value="-J" />
+            <arg value="${path.main}/gen" />
+            <arg value="-M" />
+            <arg value="${path.main}/AndroidManifest.xml" />
+            <arg value="-S" />
+            <arg value="${path.main}/res" />
+<!--             <arg value="-S" /> -->
+<!--             <arg value="${path.library1}/res" /> -->
+<!--             <arg value="-S" /> -->
+<!--             <arg value="${path.library2}/res" /> -->
+<!--             <arg value="extra-packages" /> -->
+<!--             <arg value="${package.library1}:${package.library2}" /> Library Project的包名 -->
+            <arg value="-A"/>
+            <arg value="${path.main}/assets"/>
+            <arg value="-I" />
+            <arg value="${android-jar}" />
+            <arg value="--auto-add-overlay" />
+        </exec>
+        
+        <echo>step2-->编译aidl文件</echo>  
+        <apply executable="${aidl}" failonerror="true">  
+            <arg value="-p${android-framework}" />  
+            <arg value="-I${path.main}/src" />  
+            <fileset dir="${path.main}/src">  
+                <include name="**/*.aidl" />  
+            </fileset>  
+        </apply> 
+
+        <echo>step3-->编译.java文件(include R.java, library and the third-party jars)</echo>
+        <javac encoding="UTF-8" target="1.6"  extdirs="" srcdir="." 
+            destdir="${path.main}/bin/classes" bootclasspath="${android-jar}"
+             includeantruntime="on" source="1.6">
+         	<compilerarg value="-Xlint" />
+			<!-- 第三方的工程 -->
+<!--          	<src path="${path.library1}/src" /> -->
+<!--          	<src path="${path.library2}/src" /> -->
+			<!--所有的jar包 -->
+         	<classpath refid="libs"/> 
+         	<src path="${path.main}/src" />
+    		<src path="${path.main}/gen" />
+        </javac>
+
+        <echo>step4-->打包class文件成classes.dex(include the third-party jars) to calsses.dex ... </echo>
+        <exec executable="${dx}" failonerror="true">
+            <arg value="--dex" />
+            <arg value="--output=${path.main}/bin/classes.dex" />
+            <arg value="${path.main}/bin/classes" />
+            <arg value="${path.main}/libs" />
+<!--             <arg value="${path.library2}/libs" /> -->
+        </exec>
+
+        <echo>step5-->打包资源文件成res.zip(include res, assets, AndroidManifest.xml, etc.) to res.zip ... </echo>
+        <exec executable="${aapt}" failonerror="true">
+            <arg value="package" />
+            <arg value="-f" />
+            <arg value="-M" />
+            <arg value="${path.main}/AndroidManifest.xml" />
+            <arg value="-S" />
+            <arg value="${path.main}/res" />
+<!--             <arg value="-S" /> -->
+<!--             <arg value="${path.library1}/res" /> -->
+<!--             <arg value="-S" /> -->
+<!--             <arg value="${path.library2}/res" /> -->
+            <arg value="-A" />
+<!--             <arg value="${path.library1}/assets" /> -->
+            <arg value="${path.main}/assets"/>
+            <arg value="-I" />
+            <arg value="${android-jar}" />
+            <arg value="-F" />
+            <arg value="${path.main}/bin/res.zip" />
+<!--             <arg value="auto-add-overlay" /> -->
+        </exec>
+
+        <echo>step5-->生成未签名包unsigned.apk ... </echo>
+        <exec executable="${apk-builder}" failonerror="true">
+            <arg value="${path.main}/bin/unsigned.apk" />
+            <arg value="-u" />
+            <arg value="-z" />
+            <arg value="${path.main}/bin/res.zip" />
+            <arg value="-f" />
+            <arg value="${path.main}/bin/classes.dex" />
+            <arg value="-rf" />  
+            <arg value="${path.main}/src" /> 
+            <arg value="-rj"/>
+			<arg value="${path.main}/libs"/> 
+            <arg value="-nf"/>
+			<arg value="${path.libs}"/>
+        </exec>
+        
+        <echo>step6-->生成签名包signed.apk ... </echo>
+        <exec executable="${jarsigner}" failonerror="true"> 
+<!--              <arg value="-verbose" />  -->
+			<arg value="-digestalg"/>
+			<arg value="SHA1"/>
+			<arg value="-sigalg"/>
+			<arg value="MD5withRSA"/>
+<!-- 			jdk 1.7 需要 以上四行算法的代码 -->
+            <arg value="-keystore" />  
+            <arg value="${keystore}" />  
+            <arg value="-storepass" />  
+            <arg value="${keystore.password}" />  <!-- 验证密钥完整性的口令，创建时建立的 -->
+            <arg value="-keypass" />
+    		<arg value="${keystore.password}" /> <!-- 专用密钥的口令，就是key密码 -->
+            <arg value="-signedjar" />  
+            <arg value="${path.main}/bin/signed.apk" />  
+            <arg value="${path.main}/bin/unsigned.apk" />
+            <arg value="${keystore.alias}" />   
+            <arg value="-sigfile"/>
+            <arg value="CERT" />
+        </exec> 
+        
+        <echo>step7-->优化安装包 ... </echo>
+        <exec executable="${zipalign}" failonerror="true">  
+            <arg value="-v" />  
+            <arg value="-f" />  
+            <arg value="4" />  
+            <arg value="${path.main}/bin/signed.apk" />  
+            <arg value="${path.main}/bin/${zip-app-name}" />  
+        </exec>
+        
+        <echo>done.</echo>
+    </target>
+    
+    
+    <target name="ids">
+        <mkdir dir="${path.out}" />
+        <mkdir dir="${path.main}/gen" />
+        <mkdir dir="${path.main}/bin" />
+		<taskdef resource="net/sf/antcontrib/antcontrib.properties" classpath="${ant.home}/lib/ant-contrib-1.0b3.jar" />
+			<loadfile property="file-content" srcFile="${file.channel.ids}" />
+			<foreach target="modify_manifest" param="id" list="${file-content}" delimiter="&#xD;&#xA;"/>
+	</target>
+	
+	
+    <!--修改 配置文件 manifest 中的channel id -->
+   	<target name="modify_manifest">  
+		<replaceregexp flags="g" byline="false" encoding="utf-8">  
+      		<regexp pattern="&lt;meta-data android:name=&quot;SZICITY_CHANNEL&quot; android:value=&quot;(.*)&quot;/>" /> 
+	  		<substitution expression="&lt;meta-data android:name=&quot;SZICITY_CHANNEL&quot; android:value=&quot;${id}&quot;/>" /> 
+      		<fileset dir="${path.main}" includes="AndroidManifest.xml" />  
+		</replaceregexp>  
+		<echo>开始打包渠道: ${id}</echo>
+		<antcall target="main" /> 
+		<copy file="${path.main}/bin/${zip-app-name}" tofile="${path.out}/${id}/${zip-app-name}"/>
+		<copy file="${path.main}/bin/${zip-app-name}" tofile="${env.PHP_FOR_JENKINS}/${download-app-name}"/>
+<!-- 		<delete file="${path.main}/bin/${zip-app-name}" /> -->
+		<delete file="${path.bin}/signed.apk" />
+		<delete file="${path.bin}/unsigned.apk" />
+   </target> 
+    
+ 
+</project>

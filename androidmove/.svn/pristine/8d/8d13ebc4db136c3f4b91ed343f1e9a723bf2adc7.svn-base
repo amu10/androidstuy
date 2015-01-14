@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="5dip"
+    android:orientation="horizontal"
+     >
+
+    <ImageView
+        android:layout_width="15dip"
+        android:layout_height="15dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dip"
+        android:background="@drawable/person" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="24dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dip"
+        android:gravity="center"
+        android:text="座区号:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#797776"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/movieSeat_orderInfo_seatCode"
+        android:layout_width="wrap_content"
+        android:layout_height="24dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dip"
+        android:gravity="center"
+        android:text="01"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="24dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dip"
+        android:gravity="center"
+        android:text="座行:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#797776"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/movieSeat_orderInfo_seatRow"
+        android:layout_width="wrap_content"
+        android:layout_height="24dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dip"
+        android:gravity="center"
+        android:text="08"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="24dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dip"
+        android:gravity="center"
+        android:text="座列:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#797776"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/movieSeat_orderInfo_seatCol"
+        android:layout_width="wrap_content"
+        android:layout_height="24dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dip"
+        android:gravity="center"
+        android:text="09"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    <TextView
+            android:id="@+id/textview_orderinfo_num"
+            android:layout_width="wrap_content"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:gravity="center"
+            android:text="共4位  V"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#797776"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+</LinearLayout>
